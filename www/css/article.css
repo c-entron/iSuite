@@ -1,0 +1,169 @@
+/*W3C CSS Validated on 21 May 2014*/
+
+@media only screen and (max-width: 768px) {
+    #article_page {
+        height: 940px !important;
+        min-height: 940px !important;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #article_page {
+        min-height: 684px !important;
+        height: 684px !important;
+    }
+}
+#article_page .header {
+	background: #008A9C;
+}
+#article_page .ui-content {
+    height: 100%;
+    padding-bottom: 0;
+}
+/*.ui-collapsible-heading, */#article_page .ui-collapsible-heading>.ui-btn {
+	background: #008A9C;
+}
+#article_accordion .ui-collapsible-heading span.ui-btn-text {
+    color: #fff;
+}
+.distributor_filter {
+    height: 54px;
+}
+.distributor_filter_container {
+    width: 50%;
+    float: left;
+    padding: 6px 0;
+}
+.distributor_text_filter_container {
+    width: 45%;
+    float: left;
+    padding-left: 5%;
+}
+.distributor_text_filter_container div.ui-input-text,
+.distributor_text_filter_container .icon-search {
+    display: inline-block;
+}
+.distributor_text_filter_container div.ui-input-text {
+    width: 72%;
+    box-shadow: none;
+}
+#article_search[class^="icon-"]::before, #article_search[class*=" icon-"]::before {
+    width: 30px;
+    font-size: 20px;
+    margin-left: 0px;
+    border: 1px solid #aaa;
+    border-radius: 30px;
+    height: 30px;
+    position: relative;
+    top: 2px;
+    left: 10px;
+    color: #bbb;
+}
+#bc_article_search[class^="icon-"]::before, #bc_article_search[class*=" icon-"]::before {
+    width: 30px;
+    font-size: 20px;
+    margin-left: 0px;
+    border: 1px solid #aaa;
+    border-radius: 30px;
+    height: 30px;
+    position: relative;
+    top: 2px;
+    left: 10px;
+    color: #bbb;
+}
+
+.distributor_filter_container div.ui-input-text {
+    display: none;
+}
+/*
+#distributor_dropdown_dummy[class^="icon-"]::before,
+#distributor_dropdown_dummy[class*=" icon-"]::before {
+    width: 24px;
+    line-height: 30px;
+    margin: 0;
+    color: #aaa;
+    font-size: 24px;
+    position: absolute;
+    right: 8px;
+}
+*/
+#distributor_dropdown_dummy[readonly] {
+    text-transform: none;
+    padding: .4em;
+    margin: 0px;
+    line-height: 22px;
+    line-height: 1.4em;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    border: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+}
+label[for="distributor_dropdown_dummy"],
+#distributor_dropdown_dummy {
+	display:inline-block;
+    min-width: 100px;
+    -webkit-appearance: none;
+}
+
+#article_accordion {
+    clear: both;
+    margin: 2%;
+}
+#article_accordion table {
+    width: 100%;
+}
+#article_accordion ul {
+    list-style-type: none;
+    margin-bottom: 1em;
+}
+#article_accordion li {
+	clear: both;
+    margin: 10px 0;
+    height: 3em;
+}
+#article_accordion li div {
+	float: left;
+	width: 45%;
+}
+#article_accordion li div:nth-child(2n) {
+    margin-left: 10%;
+}
+#article_accordion label {
+    font-size: 16px;
+}
+/*
+#article_accordion label:nth-child(2n-1) {
+    font-weight: bold;
+}
+*/
+#article_accordion label:nth-child(2n) {
+    float: right;
+}
+#article_accordion .centron_icon [class*=" ui-icon-"]::before {
+    left: 4px;
+    top: 4px;
+    font-size: 14px;
+}
+.purchase_price {
+    display: none;
+}
+
+.article_label {
+    font-weight: bold;
+}
+#article_accordion .large-description {
+    height: auto;
+}
+.large-description p {
+    overflow: auto;
+    min-height: 2em;
+    font-size: 16px;
+}
+.no-result {
+    font-size: 18px;
+    margin-top: 2em;
+    text-shadow: none;
+}
+.offline-mode .no-result {
+    color: #fff;
+}

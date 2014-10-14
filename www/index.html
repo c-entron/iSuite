@@ -1,0 +1,1871 @@
+<!DOCTYPE html>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+ 
+ http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+ -->
+<!--Validated by javascriptlint.com/online_lint.php on 21 May 2014-->
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+        
+        <title>Quick Suite Version 3.0</title>
+        
+        <link rel="localization" hreflang="de" href="lang/de.json" type="application/vnd.oftn.l10n+json"/>
+        
+        <link rel="stylesheet" href="css/index.css" />
+        <!---->
+        <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.3.custom.min.css" />
+        
+        <link rel="stylesheet" href="css/jquery.mobile-1.3.2.css" />
+        
+        <link rel="stylesheet" href="css/lib/jquery.signaturepad.css">
+            
+        <!--
+        <link rel="stylesheet" href="css/lib/mobiscroll.custom-2.9.2.min.css">
+        -->
+        <!--CEntron icons-->
+        <link rel="stylesheet" href="css/centronicons.css" />
+
+        <link rel="stylesheet" href="css/home.css"/>
+        <link rel="stylesheet" href="css/login.css" />
+        <link rel="stylesheet" href="css/webservice.css" />
+        <!--<link href="css/helpdesk.css" rel="stylesheet"/>-->
+        <link rel="stylesheet" href="css/isuite_style.css" />
+        <link rel="stylesheet" href="css/codiqa.ext.css">
+        <link rel="stylesheet" href="css/helpdesk_popup.css">
+        
+        <!--iScroll4 pull up to refresh-->
+        <link rel="stylesheet" href="css/helpdesk_paging.css">
+        <link rel="stylesheet" href="css/article_paging.css">
+        <link rel="stylesheet" href="css/crm_paging.css">
+        <link rel="stylesheet" href="css/customer_paging.css">
+        <link rel="stylesheet" href="css/serial_number_paging.css">
+        <link rel="stylesheet" href="css/todo_list_paging.css">
+            
+        <!--Helpdesk New Time Entry-->
+        <link rel="stylesheet" href="css/track_time.css">
+        <link rel="stylesheet" href="css/language_flag.css">
+        <link rel="stylesheet" href="css/new_edit_HD.css">
+        <link rel="stylesheet" href="css/customer.css">
+        <link rel="stylesheet" href="css/customer_details.css">
+        <link rel="stylesheet" href="css/favorites.css">
+        <link rel="stylesheet" href="css/todolist.css">
+        <link rel="stylesheet" href="css/hotline.css">
+        <link rel="stylesheet" href="css/serial_number.css">
+        <link rel="stylesheet" href="css/article.css">
+        <link rel="stylesheet" href="css/centron_alert.css">
+        <link rel="stylesheet" href="css/crm.css">
+        <link rel="stylesheet" href="css/stopwatch.css">
+        <link rel="stylesheet" href="css/settings.css">
+        <link rel="stylesheet" href="js/lib/mobiscroll/css/mobiscroll.custom-2.12.0-beta.min.css">
+
+        <script src="js/lib/CryptoJS/rollups/aes.js"></script>
+        <script src="js/common.js"></script>
+        
+		<script src="js/lib/moment.js/moment.min.js"></script>
+		<script src="js/lib/moment.js/moment-timezone.min.js"></script>
+		<script src="js/lib/moment.js/moment-timezone-data.js"></script>
+        
+        <script src="js/lib/homepagewheel.js"></script>
+        
+        <script src="js/lib/iscroll.js"></script>
+        
+        <script src="js/lib/jquery-1.9.1.js"></script>
+        
+        <script src="js/lib/jquery.cycle.all.js"></script>
+
+        <script src="js/geolocation.js"></script>
+        
+        <!--
+        <script src="js/lib/mobiscroll.custom-2.9.2.min.js"></script>
+        -->
+        <script src="js/ajax_abort.js"></script>
+        <!---->
+        <script src="js/lib/jquery-ui-1.10.3.custom.min.js"></script>
+        
+        <script>     
+        $(document).on("mobileinit", function () {
+          $.mobile.fixedtoolbar.prototype.options.tapToggle = false;
+          $.mobile.fixedtoolbar.prototype.options.hideDuringFocus ="";
+
+        });
+        </script>
+
+        <script src="js/lib/jquery.mobile-1.3.2.js"></script>
+        <script src="js/lib/mobiscroll/js/mobiscroll.custom-2.12.0-beta.min.js"></script>
+        
+        <script src="js/language_flag.js"></script>
+        
+        <script src="cordova.js"></script>
+        
+        <script src="js/lib/i18n.js"></script>
+        <script src="js/i18n.utility.js"></script>
+        
+        <script src="js/lib/jquery.signaturepad.min.js"></script>
+        
+        <script src="js/settings.js"></script>
+
+        <script src="js/login.js"></script>
+        
+        <script src="js/database.js"></script>
+        
+        <script src="js/rest.js"></script>
+        
+        <script src="js/webservice.js"></script>
+        
+        <script src="js/stopwatch.js"></script>
+        <script src="js/home.js"></script>
+        
+        <script src="js/helpdesk.js"></script>
+        <script src="js/helpdesk_paging.js"></script>
+        
+        <script src="js/helpdesk_timers.js"></script>
+
+        <script src="js/track_time.js"></script>
+        
+        <script src="js/customer.js"></script>
+        <script src="js/customer_paging.js"></script>
+        
+        <script src="js/customer_details.js"></script>
+        
+        <script src="js/favorites.js"></script>
+        <script src="js/favourites_details.js"></script>
+        
+        <script src="js/todolist.js"></script>
+        <script src="js/todo_list_paging.js"></script>
+        
+        <script src="js/hotline.js"></script>
+        <script src="js/hotline_details.js"></script>
+
+        <script src="js/serial_number.js"></script>
+        <script src="js/serial_number_paging.js"></script>
+        
+        <script src="js/article.js"></script>
+        <script src="js/article_paging.js"></script>
+        
+        <script src="js/crm.js"></script>
+        <script src="js/crm_paging.js"></script>
+        
+        <script src="js/lib/barcodescanner.js"></script>
+        <script src="js/lib/wizUtils.js"></script>
+        
+    </head>
+    <body>
+
+        <div data-role='page' id="home_page" >
+            
+            <div class="header pageTitle">c-entron | iSuite&sup3;</div>
+            <div id="wheel_selected_customer">
+                <span id="span_selected_customer" class="title i18n" data-i18n="Selected Customer">Selected Customer</span>
+                <span id="span_no_selected_customer" class="title i18n" data-i18n="No Customer Selected">No Customer Selected</span>
+                <span id="wheel_selected_customer_name"><!--c-entron software--></span>
+                <span id="remove_selected_customer" class="icon-cancel"></span>
+            </div>
+            
+            <div class="main_dialer_conitainer">
+                <div class="dialer_area">
+                    <div id ="infobox" class="i18n"></div>
+                    <div id='tap_receiver'></div>
+                    <div id="wheel">
+                        <div id="wheelbox">
+
+                            <div id="selected_module" class="selected-mask">
+                                <div id="module_image">
+                                    <img alt="Selected icon" src="img/images/icon_selected_0.png">
+                                </div>
+                            </div>
+                        </div><!--#wheelbox-->
+                        
+                        <ul id="centronWheel">
+                            <li id="wheelgraph"></li>
+                        </ul><!--#centronWheel-->
+                        
+                    </div><!--#wheel-->
+                    
+                    <div class="middle-image"></div>
+                </div><!--.dialer_area-->
+                
+                <div class="green_arrow_button_area"><!--<a href="#-1"></a>--></div>
+                <div class="clear"></div>
+            </div><!--.main_dialer_conitainer-->
+            
+            <div class="btnsContainer">
+                <button id="home" data-role="none" data-i18n="Login" class="i18n homeBtn">Login</button>
+                <button id="appSettings" data-role="none" data-i18n="Settings" class="i18n settingBtn user_not_loggedin">Settings</button>
+                <button id="stopwatch" data-role="none" data-i18n="Stopwatch" class="i18n timerBtn user_not_loggedin">Stopwatch</button>
+                <button id="home_logout" data-role="none" data-i18n="Logout" class="i18n user_not_loggedin">Logout</button>
+            </div>
+            
+            <div class="cb"></div>
+
+            <div class="buttons_user_date_time_container">
+                <div class="button user_btn button1 icon-user"><a href="#-1">&nbsp;&nbsp;&nbsp;</a></div>
+                <div class="button date_btn button2 icon-calendar"><a href="#-1">&nbsp;&nbsp;&nbsp;</a></div>
+                <div class="button time_btn button3 icon-clock"><a href="#-1">&nbsp;&nbsp;&nbsp;</a></div>
+
+                <select id="language_select" data-native-menu="false" data-mini="true" data-inline="true">
+                    <option class="i18n" data-i18n="English" selected value="en" icon="english">English</option>
+                    <option class="i18n" data-i18n="German" value="de" icon="german">German</option>
+                </select>
+            </div>
+            
+            <div class="popup_overlay overlay_when_uploading">
+                <div class="ajax-loader"></div>
+            </div>
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-info">
+                <p></p>
+            </div>
+            
+            <div class="ws_error_message">
+                <h2 class="ws_error_header">Error</h2>
+                <div class="ws_error_close icon-cancel"></div>
+                <ul class="ws_error_content"></ul>
+            </div><!--.ws_error_message-->
+            
+            <div data-role="popup" id="popupConfirmUploadDialog" data-overlay-theme="a" data-theme="a" style="width:500px;" class="ui-corner-all centron-alert-confirmation" data-dismissible="false" data-history="false">
+                <div data-role="header" data-theme="a" class="ui-corner-top">
+                    <h1>Upload changes to server?</h1>
+                </div>
+                <div role="main" class="ui-corner-bottom ui-content">
+                    <ul class="upload_msg"></ul>
+                    <a href="#" class="upload_changes_no centron-alert-info" data-role="button" data-inline="true" data-rel="back" data-theme="a">Cancel</a>
+                    <a href="#" class="upload_changes_yes centron-alert-error" data-role="button" data-inline="true" data-rel="back" data-transition="flow" data-theme="b">Ok</a>
+                </div>
+            </div>
+            
+            <div class="popup_overlay stopwatch-popup-overlay"></div>
+            <div id='stopwatch_in_home_page' class="stopwatch-popup">
+                
+                <h1 data-i18n="Stopwatch" class="i18n pageTitle">Stopwatch</h1>
+                
+                <div class="stopwatch-container">
+                    
+                </div><!--.stopwatch-container-->
+                <a class="icon-plus" name="stopwatch-new" href="#" data-role="none" >New</a>
+                <div class="close-stopwatch half-circle-left"></div>
+            </div><!--#stopwatch_in_home_page-->
+            
+        </div><!--#home_page-->
+
+        <div data-role='page' id="login_page">
+            <div data-role="header" id="mainBox">
+                <div class="header">
+                    <div class="backBtn" id="back"></div>
+                    <span data-i18n="Login" class="i18n pageTitle">Login</span>
+                    <div class="closeBtn" id="close"></div>
+                    <span class="cb"></span>
+                </div>
+                <div data-role="content" class="contentBox">
+                    <div class="midBox">
+                        <form id="loginForm">
+                            <div class="formRow"></div>
+                            
+                            <div class="formRow">
+                                <label>Server</label>
+                                <dl id="ws_dropdown" class="dropdown">
+                                    <dt><a href="#" ><span>Select Server</span></a></dt>
+                                    <dd>
+                                        <ul id="ul_ws_dropdown" style="padding: 0px"></ul>
+                                    </dd>
+                                </dl>
+                                <span id="result" style="display: none"></span>
+                                <span class="editServer icon-pencil" id="edit"></span>
+                            </div>
+                            
+                            <div class="formRow">
+                                <label data-i18n="User" class="i18n" for="username">User</label>
+                                <input data-role="none" type="text" name="username" id="username" maxlength="60" value="" placeholder="Username" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+                            </div>
+                            
+                            <div class="formRow">
+                                <label data-i18n="Password" class="i18n" for="password">Password</label>
+                                <input data-role="none" type="password" name="password" id="password" maxlength="60" value="" placeholder="Password" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+                            </div>
+                            
+                            <div class="formRow save_password">
+                                <label data-i18n="Save Password" class="i18n" for="save_password_slider">Save Password</label>
+                                <select name="save_password_slider" id="save_password_slider" data-role="slider" data-theme="a">
+                                    <option value="on" >On</option>
+                                    <option value="off" >Off</option>
+                                </select>
+                            </div>
+                            
+                            <div class="formRow offline_mode">
+                                <label data-i18n="Offline Mode" class="i18n" for="offline_mode_slider">Offline Mode</label>
+                                <select name="offline_mode_slider" id="offline_mode_slider" data-role="slider" data-theme="b">
+                                     <option value="on" >On</option>
+                                     <option value="off" >Off</option>
+                                </select>
+                            </div>
+                            
+                            <div class="formRow">
+                                <label>&nbsp;</label>
+                                <div data-i18n="Login" class="i18n loginBtn loginbtn_h" id="login">Login</div>
+                                <!--<div data-i18n="Logout" class="i18n logoutBtn logout_h" id="logout">Logout</div>-->
+                            </div>
+                                
+                            <div class="cb"></div>
+                        </form>
+                    </div>
+
+                <!--[data-role="content"]--></div>
+                <div class="push"></div>
+            </div>
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-info">
+                <p></p>
+            </div>
+
+            <div data-role="popup" id="popupEnableOfflineDialog" data-overlay-theme="a" data-theme="a" class="ui-corner-all centron-alert-confirmation" data-dismissible="false" data-history="false">
+                <div data-role="header" data-theme="a" class="ui-corner-top">
+                    <h1>There are no off-line data available!</h1>
+                </div>
+                <div role="main" class="ui-corner-bottom ui-content">
+                    <h3 class="ui-title">Enable offline Mode?</h3>
+                    <a href="#" class="enable_offline_no centron-alert-info" data-role="button" data-inline="true" data-rel="back" data-theme="a">No</a>
+                    <a href="#" class="enable_offline_yes centron-alert-error" data-role="button" data-inline="true" data-rel="back" data-transition="flow" data-theme="b">Yes</a>
+                </div>
+            </div>
+
+            <div class="ws_error_message">
+                <h2 class="ws_error_header">Error</h2>
+                <div class="ws_error_close icon-cancel"></div>
+                <ul class="ws_error_content"></ul>
+            </div><!--.ws_error_message-->
+           
+        </div><!--#login_page-->
+
+        <div data-role='page' id='webservice_page' style="min-height: 100% !important;">
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-info">
+                <p></p>
+            </div>
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-error">
+                <p></p>
+            </div>
+            
+            <div class="ws_error_message">
+                <h2 class="ws_error_header">Error</h2>
+                <div class="ws_error_close icon-cancel"></div>
+                <ul class="ws_error_content"></ul>
+            </div><!--.ws_error_message-->
+            
+            <div data-role="popup" id="popupDeleteWSDialog" data-overlay-theme="a" data-theme="a" style="min-width:400px;" class="ui-corner-all centron-alert-confirmation" data-dismissible="false" data-history="false">
+                <div data-role="header" data-theme="a" class="ui-corner-top">
+                    <h1>Delete Web Service?</h1>
+                </div>
+                <div role="main" class="ui-corner-bottom ui-content">
+                    <h3 class="ui-title">Please confirm!</h3>
+                    <a href="#" class="remove_web_service_no centron-alert-info" data-role="button" data-inline="true" data-rel="back" data-theme="a">No</a>
+                    <a href="#" class="remove_web_service_yes centron-alert-error" data-role="button" data-inline="true" data-rel="back" data-transition="flow" data-theme="b">Yes</a>
+                </div>
+            </div>
+        
+            <div id="serviceBox">
+                <div class="header">
+                    <div class="backBtn" onclick="webserviceBackBtnClick();"></div>
+                    <span class="pageTitle">Web Services</span>
+                    <div class="closeBtn" onclick="webserviceCloseBtnClick();"></div>
+                    <span class="cb"></span>
+                </div>
+                <div data-role="content" class="contentBox contentBox_h">
+
+                </div>
+                <div class="push"></div>
+            </div>
+            
+            <div class="optionBox">
+                <div class="pop_upTitle">Webservice</div>
+                <div class="pop_upContent">
+                    <div class="inputField">
+                        <label for="nameWebservices" class="i18n" data-i18n="Name of Webservice">Name of Webservice</label>
+                        <input type="text" placeholder="Name" name="webservices" id="nameWebservices" class="webserviceName_h" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+                    </div>
+                    <div class="inputField">
+                        <label for="addressWebservices" class="i18n" data-i18n="Address of Webservice">Address of Webservice</label>
+                        <input type="text" placeholder="http(s)://[server]/CentronService/REST" name="webservices" id="addressWebservices"  class="addressWebservices_h" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+                    </div>
+                    <div class="button_container">
+                        <div class="okBtn okButton_h i18n" data-i18n="Save">Save</div>
+                        <div class="cancelBtn cancelButton_h i18n" data-i18n="Cancel">Cancel</div>
+                        <div class="cb"></div>
+                    </div>
+                    <div class="cb"></div>
+                    <div class="bottomArrow"></div>
+                </div>
+            </div><!--.optionBox-->
+            
+            <div class="footer">
+                <div class="serviceMenu footer wsfooter">
+                    <ul>
+                        <li><a href="#-1" class="addService addButton_h i18n" data-i18n="Add">Add</a></li>
+                        <li><a href="#-1" class="editService editButton_h i18n" data-i18n="Edit">Edit</a></li>
+                        <li><a href="#-1" class="deleteService deleteButton_h i18n" data-i18n="Delete">Delete</a></li>
+                        <li><a href="#-1" class="web-service-demo icon-eye">Demo</a></li>
+                    </ul>
+              </div><!--.footer-->
+            </div>
+            
+           <div style='height:100%; width:100%; position:absolute; top:0px; left:0px; z-index:10; background:#666;opacity:0.5;' id='shadow'>
+            </div>
+        </div><!--#webservice_page-->
+      
+        <div data-role='page' id='settings_page'>
+            <div class="header" data-role="header" data-tap-toggle="false" data-position="fixed">
+                <div class="column1"><a href="index.html" class="backBtn" data-transition="flip"></a></div>
+                <div class="column2 pageTitle">App Settings</div>
+                <div class="column3"></div>
+                <div class="cb"></div>
+            </div>
+            
+            <div data-role="content">
+                <div class="settings_content_container">
+                    
+                    <div class="blocks">
+                        <div class="header">Bundle Version</div>
+                        <div class="content">
+                            <div class="label" >iSuite (<span id="bundle_identifier"></span>) <span id="build_version"></span> </div>
+                        </div>
+                    </div>
+
+                    <div class="blocks">
+                        <div class="header i18n" data-i18n="Contact address">Contact address</div>
+                        <div class="content">
+                            <div class="label i18n" data-i18n="Load photo contact automatically">Load photo contact automatically</div>
+                            <div class="checkbox_container load_photo_switch_container">
+                                <div data-role="fieldcontain">
+                                    <select name="load_photo_switch" id="load_photo_switch" data-theme="" data-role="slider">
+                                        <option value="off">Off</option>
+                                        <option value="on">On</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="label i18n" data-i18n="Delay of photo load">Delay of photo load</div>
+                            <div class="button_container">
+                                <button id="photo_load_delay_minus" data-role="none" class="substract icon-minus"></button>
+                                <span id="photo_load_delay" class="value">1.0</span>
+                                <button id="photo_load_delay_plus" data-role="none" class="addition icon-plus"></button>
+                                <div class="cb"></div>
+                            </div>
+                            <div class="label i18n" data-i18n="A higher delay time allows easier scrolling through contacts">A higher delay time allows easier scrolling through contacts</div>
+                        </div>
+                    </div>
+                    <div class="blocks">
+                        <div class="header i18n" data-i18n="Offline mode">Offline mode</div>
+                        <div class="content">
+                            <div class="label i18n" data-i18n="Delete offline data">Delete offline data</div>
+                            <div class="delete_container">
+                                
+                                <button id="delete_offline_data" data-iconshadow="false" data-iconpos="left" data-icon="centron-trash" data-inline="true" data-corners="true" data-mini="true">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--content-->
+
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-info">
+                <p></p>
+            </div>
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-error">
+                <p></p>
+            </div>
+
+            <div data-role="popup" id="popupDeleteOfflineData" data-overlay-theme="a" data-theme="a" style="max-width:400px;" class="ui-corner-all centron-alert-confirmation" data-dismissible="false" data-history="false">
+                <div data-role="header" data-theme="a" class="ui-corner-top">
+                    <h1>Confirm Delete</h1>
+                </div>
+                <div role="main" class="ui-corner-bottom ui-content">
+                    <h3 class="ui-title">Offline data’s really delete?</h3>
+                    <a href="#" class="remove_offline_no centron-alert-info" data-role="button" data-inline="true" data-rel="back" data-theme="a">No</a>
+                    <a href="#" class="remove_offline_yes centron-alert-error" data-role="button" data-inline="true" data-rel="back" data-transition="flow" data-theme="b">Yes</a>
+                </div>
+            </div>
+
+            <div class="ws_error_message">
+                <h2 class="ws_error_header">Error</h2>
+                <div class="ws_error_close icon-cancel"></div>
+                <ul class="ws_error_content"></ul>
+            </div><!--.ws_error_message-->
+
+        </div><!--#settings_page-->
+
+        <div data-role='page' id='helpdesk_page'>
+            <div class="header" data-role="header" data-tap-toggle="false" data-position="fixed">
+                <div class="backBtn" id="helpdeskBack"></div>
+                <span class="pageTitle">Helpdesk</span>
+                <div class="closeBtn" id="helpdeskClose"></div>
+                <span class="cb"></span>
+                
+                <div class="helpdesk_display_options">
+            
+                    <div class="filter_options">
+                        <h4 class="display_options_title options">Filter</h4>
+
+                        <div class="filter_container">
+                            <label class="filter_label i18n" data-i18n="Category">Category</label>
+                            <!--<div id="category_opener" class="ddelement">Select all</div>-->
+                            <ul data-role="none" id="helpdesk_categories"></ul>
+                        </div>
+                        
+                        <div class="filter_container">
+                            <label class="filter_label i18n" data-i18n="States">States</label>
+                            <select data-role="none" id="helpdesk_states"></select>
+                        </div>
+                        
+                        <div class="filter_container">
+                            <label class="filter_label i18n" data-i18n="Editor">Editor</label>
+                            <select data-role="none" id="helpdesk_editors"></select>
+                        </div>
+                    </div><!--.filter_options-->
+                    
+                    <div class="display_options">
+                        <h4 class="display_options_title display i18n" data-i18n="Display">Display</h4>
+                        <input type="radio" name="all_tickets" id="all_tickets" value="all_tickets"/><label for="all_tickets"><span class="i18n" data-i18n="all tickets">all tickets</span></label>
+                        <input type="radio" name="all_tickets" id="my_tickets" checked value="my_tickets"/><label for="my_tickets"><span class="i18n" data-i18n="only my own tickets">only my own tickets</span></label>
+                        <input type="checkbox" name="closed_tickets" id="closed_tickets" value="closed_tickets"/><label for="closed_tickets"><span class="i18n" data-i18n="show closed tickets">show closed tickets</span></label>
+                    </div><!--.display_options-->
+
+                    <div class="cb"></div>
+                </div>
+            </div>
+            <div data-role="content">
+                <!-- main wrapper begins -->
+                <div id="main_wrapper">
+
+                    <div class="gmap_outer_container">
+                        <div class="gmap_close icon-cancel"></div>
+                        <div id="helpdesk_gmap" class="gmap_container"></div>
+                    </div>
+                    
+                    <div class="header_float_clear"></div>
+                    
+                    <!--content will be here-->
+                    <div id="iscroll4_wrapper">
+                        <div id="iscroll4_scroller">
+                            <div data-i18n="All tickets" class="title_container i18n">All tickets</div>
+
+                            <ul id="helpdesk_ticket_list"></ul>
+                            
+                            <div id="pullUp">
+                                <span class="pullUpIcon"></span><span class="pullUpLabel i18n" data-i18n="Pull up to load more...">Pull up to load more...</span>
+                            </div>
+                        </div>
+                    </div><!--#iscroll4_wrapper-->
+                    
+                    <div class="cb"></div>
+                    
+                    <ul id="helpdesk_ticket_details">
+                    </ul>
+                    
+                    <div id="forwardHD_popup_overlay" class="popup_overlay"></div>
+                    <div id="ForwardHelpdeskPopup">
+                        <div class="helpdeskI3D"></div>
+                        
+                        <div class="forwardHD_popupBox">
+                            <div id="forwardHD_closePopup" class="close_popup  icon-cancel"></div>
+                            <div class="forwardHD_popupTitle i18n" data-i18n="Forward Helpdesk">Forward Helpdesk</div>
+                            <div class="forwardHD_popupPadder">
+                                <div class="forwardHD_popupContent">
+                                    <div class="forwardHD_popupCol1 fl">
+                                        
+                                        <div class="forwardHD_contentHeading i18n" data-i18n="To Forward">To Forward</div>
+                                        <div class="forwardHD_dropDown_menu hd_forward_to">
+                                            <div class="forwardHD_headerLink"></div>
+                                        </div>
+
+                                        <div class="forwardHD_popupInput_box helpdesk_advisers"></div>
+                                        
+                                        <div class="forwardHD_contentHeading mail_cc i18n" data-i18n="Copy">Copy</div>
+                                        <div class="forwardHD_dropDown_menu hd_forward_cc">
+                                            <div class="forwardHD_headerLink"></div>
+                                        </div>
+                                        
+                                        <div class="forwardHD_contentHeading mail_bcc">BCC</div>
+                                        <div class="forwardHD_dropDown_menu hd_forward_bcc">
+                                            <div class="forwardHD_headerLink"></div>
+                                        </div>
+
+                                    </div><!--.forwardHD_popupCol1.fl-->
+                                    <div class="forwardHD_popupCol2 fl">
+                                        <div class="forwardHD_popupSubject">
+                                            <div class="forwardHD_contentHeading i18n" data-i18n="Subject">Subject</div>
+                                            <input class="forwardHD_subjectTxt forwardHD_mail_subject" data-theme="y" />
+                                        </div>
+                                        <div class="forwardHD_contentHeading">Text</div>
+                                        <textarea rows="5" class="forwardHD_subjectTxt forwardHD_mail_body" data-theme="y" >Lorem ipsum dolor sed diam nonumy eirmod tempor invidunt ut</textarea>
+                                        
+                                        <div class="forwardHD_contentHeading hd_status i18n" data-i18n="Status after Forwarding">Status after Forwarding</div>
+
+                                        <div class="forwardHD_subjectTxt hd_status">
+                                            <!--
+                                            <label id="newHelpdeskStateI3D" class="menu_label icon-left-open">&nbsp;</label>
+                                            <ul id="status_after_forwarding"></ul>
+                                            -->
+                                            <div class="cb"></div>
+                                            <select data-role="none" id="status_after_forwarding"></select>
+                                        </div>
+                                    </div><!--.forwardHD_popupCol2.fl-->
+
+                                    <div class="cb"></div>
+                                </div><!--.forwardHD_popupContent-->
+                            </div><!--.forwardHD_popupPadder-->
+                            <div class="HDTimer_popup_footer">
+                                <button id="forwardHD_cancel" data-inline="true" class="i18n" data-i18n="Cancel">Cancel</button>
+                                <button id="forwardHD_forward" data-icon="icon-forward" data-inline="true" type="submit" class="i18n" data-i18n="Forward Helpdesk">Forward Helpdesk</button>
+                            </div>
+                        </div><!--.forwardHD_popupBox-->
+                    </div><!--#ForwardHelpdeskPopup-->
+                    
+                    <div id="new_edit_HD_popup_overlay" class="popup_overlay"></div>
+                    <div id="new_edit_HD_popup" class="new_edit_HD_main">
+                    <div id="new_edit_HD_popup_close" class="close_popup icon-cancel"></div>
+                    <div class="new_edit_HD_main_heading">
+                        <div class="new_edit_HD_help_desk_heading">New Helpdesk<span class="hd_number"></span></div>
+                    </div>
+                        
+                    <div class="new_edit_HD_main_table">
+
+                    <div class="new_edit_HD_heading">Information</div>
+
+                    <div class="new_edit_HD_row">
+                        <div class="new_edit_HD_column new_edit_HD_date">
+                            <label class="new_edit_HD_clear_left_padding i18n" data-i18n="Due on">Due on</label>
+                            <div>
+                                <input data-role="none" id="hd_date" type="text" class="new_edit_HD_date_picker" maxlength="8" />
+                            </div>
+                            <div></div>
+                        </div>
+                        <div class="new_edit_HD_column new_edit_HD_duration">
+                            <label data-role="none" class="hd_label i18n" data-i18n="Duration">Duration</label>
+                            <input data-role="none" id="hd_duration" type="number" maxlength="3" />
+                            <label class="new_edit_HD_width_95 hd_label i18n" data-i18n="in Hours">in Hours</label>
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+
+                    <div class="new_edit_HD_row"><label class="new_edit_HD_clear_left_padding i18n" data-i18n="Short Description">Short Description</label><input data-role="none" id="hd_shortDescription" type="text" maxlength="1000" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" /><div class="cb"></div></div>
+
+                    <div class="new_edit_HD_row">
+                        <label class="new_edit_HD_clear_left_padding i18n" data-i18n="Description">Description</label>
+                        <textarea data-role="none" id="hd_description" cols="10" rows="3" maxlength="1000" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+                        <div class="cb"></div>
+                    </div>
+
+                    <div class="new_edit_HD_row">
+                        <div class="new_edit_HD_column">
+                            <label class="new_edit_HD_clear_left_padding i18n" data-i18n="Responsibility" data-role="none">Responsibility</label>
+                            <div class="menu_container">
+                                <!--
+                                <label class="menu_label icon-down-open" data-role="none">&nbsp;</label>
+                                <ul id="hd_responsibility"></ul>
+                                -->
+                                <select data-role="none" id="hd_responsibility"></select>
+                            </div>
+                        </div>
+                        <div class="new_edit_HD_column">
+                            <label class="new_edit_HD_clear_left_padding hd_label" data-role="none">Status</label>
+                            <div class="menu_container">
+                                <!--
+                                <label class="menu_label icon-down-open" data-role="none">&nbsp;</label>
+                                <ul id="hd_status"></ul>
+                                -->
+                                <select data-role="none" id="hd_status"></select>
+                            </div>
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+
+                    <div class="new_edit_HD_row">
+                        <div class="new_edit_HD_column">
+                            <label class="new_edit_HD_clear_left_padding i18n" data-i18n="Priority" data-role="none">Priority</label>
+                            <div class="menu_container">
+                                <!--
+                                <label class="menu_label icon-down-open" data-role="none">&nbsp;</label>
+                                <ul id="hd_priority"></ul>
+                                -->
+                                <select data-role="none" id="hd_priority"></select>
+                            </div>
+                        </div>
+                        <div class="new_edit_HD_column">
+                            <label class="new_edit_HD_clear_left_padding hd_label i18n" data-i18n="Contract" data-role="none">Contract</label>
+                            <div class="menu_container">
+                                <select data-role="none" id="hd_contract"></select>
+                            </div>
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+
+                    <div class="new_edit_HD_row">
+                        <div class="new_edit_HD_column">
+                            <label class="new_edit_HD_clear_left_padding i18n" data-i18n="Type" data-role="none">Type</label>
+                            <div class="menu_container">
+                                <!--
+                                <label class="menu_label icon-down-open" data-role="none">&nbsp;</label>
+                                <ul id="hd_type"></ul>
+                                -->
+                                <select data-role="none" id="hd_type"></select>
+                            </div>
+                        </div>
+                        <div class="new_edit_HD_column">
+                            <label class="new_edit_HD_clear_left_padding hd_label i18n" data-i18n="Master data list" data-role="none">Master data list</label>
+                            <div class="menu_container">
+                                <select data-role="none" id="master_data_list"></select>
+                            </div>
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+
+                    <div class="new_edit_HD_row">
+                        <div class="new_edit_HD_column">
+                            <label class="new_edit_HD_clear_left_padding i18n" data-i18n="Category" data-role="none">Category</label>
+                            <div class="menu_container">
+                                <!--<label class="menu_label icon-down-open" data-role="none">&nbsp;</label>-->
+                                <ul data-role="none" id="hd_category"></ul>
+                            </div>
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+                    
+                    <div class="new_edit_HD_heading i18n" data-i18n="Customer">Customer</div>
+                    <input type="hidden" id="customerI3D">
+                    
+                    <div class="new_edit_HD_row">
+                        <label class="new_edit_HD_clear_left_padding">Name</label>
+                        <input data-role="none" id="customer_name" type="text" readonly/>
+                        <div class="cb"></div>
+                    </div>
+                    
+                    <div class="new_edit_HD_row">
+                        <!--<div class="new_edit_HD_column">-->
+                            <label class="new_edit_HD_clear_left_padding i18n" data-i18n="Address">Address</label>
+                            <div class="menu_container">
+                                <!--
+                                <label class="menu_label address_contact icon-down-open" data-role="none">&nbsp;</label>
+                                -->
+                                <select data-role="none" id="hd_address"></select>
+                                <div class="cb"></div>
+                            </div>
+                        <!--</div>-->
+                        <div class="cb"></div>
+                    </div>
+                    
+                    <div class="new_edit_HD_row">
+                        <!--<div class="new_edit_HD_column">-->
+                            <label class="new_edit_HD_clear_left_padding i18n" data-i18n="Contact">Contact</label>
+                            <div class="menu_container">
+                                <!--
+                                <label class="menu_label address_contact icon-down-open" data-role="none">&nbsp;</label>
+                                -->
+                                <select data-role="none" id="hd_contact"></select>
+                                <div class="cb"></div>
+                            </div>
+                        <!--</div>-->
+                        <div class="cb"></div>
+                    </div>
+
+                    <div class="new_edit_HD_row submit_row">
+                        <div class="new_edit_HD_column submit_column">
+                            
+                        </div>
+                        <div class="new_edit_HD_column new_edit_HD_phone_column">
+                            <label class="hd_label hd_label_phone i18n" data-i18n="Phone">Phone</label><input data-role="none" id="hd_phone" type="number" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+                        </div>
+
+                        <div class="new_edit_HD_column">
+                            <label class="hd_label hd_label_email">E-Mail</label><input data-role="none" id="hd_email" type="text" readonly/>
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+
+                    <div class="cb"></div>
+                    </div>
+                    
+                    <div class="HDTimer_popup_footer">
+                        <button id="hd_cancel" class="i18n" data-inline="true" data-i18n="Cancel">Cancel</button>
+                        <button id="hd_submit" class="i18n" data-inline="true" data-i18n="Save">Save</button>
+                        <div class="cb"></div>
+                    </div>
+                    
+                    </div><!--.new_edit_HD_main-->
+                </div>
+                <!-- main wrapper ends -->
+            </div><!--content-->
+
+            <div data-role="footer" data-tap-toggle="false" data-position="fixed">
+                <div class="action_button_container">
+                    <div class="button new_helpdesk icon-plus"><span class="i18n" data-i18n="New">New</span></div>
+                    <div class="button edit_helpdesk icon-pencil"><span class="i18n" data-i18n="Edit">Edit</span></div>
+                    <div class="button ForwardHelpdesk forward_btn icon-forward"><span class="i18n" data-i18n="Forwarding">Forwarding</span></div>
+                    <div class="button view_time_btn icon-clock"><span class="i18n" data-i18n="Times">Times</span></div>
+                    <div class="cb"></div>
+                </div>
+            </div><!--footer-->
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-info">
+                <p></p>
+            </div>
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-error">
+                <p></p>
+            </div>
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-success">
+                <p></p>
+            </div>
+            
+            <div class="ws_error_message">
+                <h2 class="ws_error_header">Error</h2>
+                <div class="ws_error_close icon-cancel"></div>
+                <ul class="ws_error_content"></ul>
+            </div><!--.ws_error_message-->
+            
+        </div><!--#helpdesk_page-->
+
+        <div data-role='page' id='helpdesk_timers_page'>
+            <div class="header" data-role="header" data-tap-toggle="false" data-position="fixed">
+                <div class="backBtn" id="toHelpdesk"></div>
+                <span data-i18n="Helpdesk Times Summary" class="i18n pageTitle">Helpdesk Times Summary</span>
+                <!--<div class="closeBtn" id="helpdeskClose"></div>-->
+                <span class="cb"></span>
+            </div>
+            <div data-role="content">
+                <!-- main wrapper begins -->
+                <div id="main_wrapper2">
+                    <!-- header container begins -->
+                    <div class="header_container">
+                        <div class="col1 fl"></div>
+                        <div class="col2 fl"></div>
+                        <div class="col3 fl"></div>
+                        <div class="cb"></div>
+                    </div>
+                    <!-- header container ends -->
+                    <div class="contact_container">
+                        <div class="content">c-entron Produkt Präsent ... | 1234569 Dipl. Karl Wegerer | Geschäftsführer</div>
+                        <div id="helpdesk_timer_summary" class="arrow left"></div>
+                    </div>
+                    <div class="title_container">Mayer IT Software GmbH</div>
+                    <div class="header_float_clear"></div>
+                    <div id="helpdesk_timer_container"></div>
+                    <div class="cb"></div>
+
+                    <div class="gmap_outer_container">
+                        <div class="gmap_close icon-cancel"></div>
+                        <div id="timers_gmap" class="gmap_container"></div>
+                    </div>
+
+                    <div id="HDTimer_popup_overlay" class="popup_overlay"></div>
+                    <div id="HDTimer_popup" class="sigPad">
+                        <div id="internal_note_switch" class="icon-attach"></div>
+                        <div id="close_HDTimer_popup" class="close_popup icon-cancel"></div>
+                        <h1 id="HDTimer_popup_title" class="forwardHD_popupTitle i18n" data-i18n="Track Time">Track Time</h1>
+                        <ul id="HDTimer_fields">
+                            
+                            <li class="internal_note_container">
+                                <h2 class="i18n" data-i18n="Internal Note">Internal Note</h2>
+                                <textarea data-role="none" id="internal_note" maxlength="2000" rows="1"></textarea>
+                            </li>
+                            
+                            <li>
+                                <div class="date_time_container start_time">
+                                    <label class="HDTimer_label">Start</label>
+                                    <div class="hour_minute">
+                                        <input data-role="none" type="text" id="date_start" readonly="">
+                                    </div>
+                                </div><!--.date_time_container-->
+                                
+                                <div class="duration_container">
+                                    <label class="HDTimer_label i18n" data-i18n="Duration">Duration</label>
+                                    <div class="hour_minute">
+                                        <input type="text" id="duration_hour" size="2" maxlength="2" value="00" data-role="none">
+                                        <input type="text" id="duration_minute" size="2" maxlength="2" value="00" data-role="none">
+                                    </div><!--.hour_minute-->
+                                    
+                                    
+                                    <div class="quick_button">
+                                        <button id="duration_fifteen_minus" data-role="none" class="icon-minus"></button>
+                                        <span id="duration_fifteen">15 min</span>
+                                        <button id="duration_fifteen_plus" data-role="none" class="icon-plus"></button>
+                                    </div>
+                                    
+                                    <div class="quick_button">
+                                        <button id="duration_sixty_minus" data-role="none" class="icon-minus"></button>
+                                        <span id="duration_sixty">60 min</span>
+                                        <button id="duration_sixty_plus" data-role="none" class="icon-plus"></button>
+                                    </div>
+                                </div><!--.duration_container-->
+                                
+                                <div class="quick_button">
+                                    <button id="duration_eight" data-role="none" class="i18n" data-i18n="8 hour">8 hour</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="date_time_container stop_time">
+                                    <label class="HDTimer_label i18n" data-i18n="Stop">Stop</label>
+                                    <div class="hour_minute">
+                                        <input data-role="none" type="text" id="date_end" readonly="">
+                                    </div><!--.hour_minute-->
+                                </div><!--.date_time_container-->
+                                
+                                <div class="duration_container">
+                                    <label class="HDTimer_label i18n" data-i18n="Break">Break</label>
+                                    <div class="hour_minute">
+                                        <input type="text" id="break_hour" size="2" maxlength="2" value="00" data-role="none">
+                                        <input type="text" id="break_minute" size="2" maxlength="2" value="00" data-role="none">
+                                    </div><!--.hour_minute-->
+                                    
+                                    <div class="quick_button">
+                                        <button id="break_fifteen_minus" data-role="none" class="icon-minus"></button>
+                                        <span id="break_fifteen">15 min</span>
+                                        <button id="break_fifteen_plus" data-role="none" class="icon-plus"></button>
+                                    </div>
+                                    
+                                    <div class="quick_button">
+                                        <button id="break_sixty_minus" data-role="none" class="icon-minus"></button>
+                                        <span id="break_sixty">60 min</span>
+                                        <button id="break_sixty_plus" data-role="none" class="icon-plus"></button>
+                                    </div>
+                                </div><!--.duration_container-->
+                            </li>
+                            <li>
+                                <div class="date_time_container">
+                                    <label class="HDTimer_label HDTimer_label_calculable i18n" data-i18n="Calculable">Calculable</label>
+                                    <!--<input type="checkbox" id="calculable">-->
+                                    <select name="calculable" id="calculable" data-theme="" data-role="slider">
+                                        <option value="off">Off</option>
+                                        <option selected value="on">On</option>
+                                    </select>
+                                </div>
+                                <div class="duration_container">
+                                    <label class="HDTimer_label i18n" data-i18n="Planned">Planned</label>
+                                    <!--<input type="checkbox" id="planned">-->
+                                    <select name="planned" id="planned" data-theme="" data-role="slider">
+                                        <option selected value="off">Off</option>
+                                        <option value="on">On</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li class="timer_emp_article">
+                                <label class="i18n article_type_lable" data-i18n="Employee Article">Employee Article</label>
+                                <!--
+                                <ul id="HDTimer_emp_article"></ul>
+                                -->
+                                <select data-role="none" id="HDTimer_emp_article"></select>
+                            </li>
+                            <li class="timer_article_type">
+                                <label class="i18n article_type_lable" data-i18n="Type">Type</label>
+                                <!--
+                                <ul id="HDTimer_type"></ul>
+                                -->
+                                <select data-role="none" id="HDTimer_type"></select>
+                            </li>
+                            <li>
+                                <h2 class="i18n" data-i18n="Description">Description</h2>
+                                <textarea data-role="none" id="HDTimer_description" maxlength="2000" rows="2" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+                            </li>
+                            <li>
+                                <h2 class="i18n" data-i18n="Signature">Signature</h2>
+                                <div id="HDTimer_signature">
+                                    <div class="sig sigWrapper">
+                                        <canvas id="timer_signature_canvas" class="pad" width="610" height="200"></canvas>
+                                        <input type="hidden" name="output" class="output">
+                                    </div>
+                                    <button data-inline="true" data-mini="true" class="clearSignature i18n" data-i18n="Clear">Clear</button>
+                                    <!--
+                                    <button data-wrapper-class="my-button-class" data-inline="true" data-mini="true" class="zoomSignature i18n" data-i18n="Zoom">Zoom</button>
+                                    -->
+                                </div><!--#HDTimer_signature-->
+                                <div id="signature_exists" class="i18n" data-i18n="Time has already been signed.">Time has already been signed.</div>
+                            </li>
+                            <li class="cb"></li>
+                        </ul>
+                        <div class="HDTimer_popup_footer">
+                            <button id="cancel_time_entry" data-inline="true" type="reset" class="i18n" data-i18n="Cancel">Cancel</button>
+                            <button id="submit_time_entry" data-inline="true" type="submit" class="i18n" data-i18n="Save">Save</button>
+                        </div>
+                    </div><!--#HDTimer_popup-->
+                    
+                </div><!-- main wrapper2 ends -->
+            </div><!--content-->
+
+            <div data-role="footer" data-tap-toggle="false" data-position="fixed">
+                <div class="action_button_container">
+                    <div class="button add_timer icon-plus"><span class="i18n" data-i18n="New">New</span></div>
+                    <div class="button edit_time_btn icon-pencil"><span class="i18n" data-i18n="Edit">Edit</span></div>
+                    <div class="button send_report icon-mail-alt"><span class="i18n" data-i18n="Send Report">Send Report</span></div>
+                    <div class="cb"></div>
+                </div>
+            </div><!--footer-->
+            
+            <div id="helpdesk_timer_error" class="ws_error_message">
+                <h2 class="ws_error_header">Error</h2>
+                <div class="ws_error_close icon-cancel"></div>
+                <ul class="ws_error_content"></ul>
+            </div><!--#helpdesk_timer_error-->
+            
+            <div id="send_report_popup_overlay" class="popup_overlay"></div>
+            <div id="send_report_container">
+                <h2 class="send_report_header i18n" data-i18n="Send Report">Send Report</h2>
+                <div class="send_report_close icon-cancel"></div>
+                <form class="send_report_form">
+                <ul>
+                    <li>
+                        <label for="timer_send_to" class="i18n" data-i18n="Send To">Send To</label>
+                        <input id="timer_send_to" type="text" maxlength="20" >
+                    </li>
+                    <li>
+                        <label for="timer_copy" class="i18n" data-i18n="Copy">Copy</label>
+                        <input id="timer_copy" type="text" maxlength="20" >
+                    </li>
+                    <li>
+                        <input type="hidden" id="timer_ids">
+                        <button data-inline="true" data-mini="true" id="timer_submit">Send Report</button>
+                    </li>
+                </ul>
+                </form>
+            </div>
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-info">
+                <p></p>
+            </div>
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-error">
+                <p></p>
+            </div>
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-success">
+                <p></p>
+            </div>
+
+            <div class="popup_overlay stopwatch-popup-overlay"></div>
+            <div id='stopwatch_in_timer_page' class="stopwatch-popup">
+                
+                <h1 data-i18n="Stopwatch" class="i18n pageTitle">Stopwatch</h1>
+                
+                <div class="stopwatch-container">
+                    
+                </div><!--.stopwatch-container-->
+                <a class="icon-plus" name="stopwatch-new" href="#" data-role="none" >New</a>
+                <div class="close-stopwatch half-circle-left"></div>
+            </div><!--#stopwatch_in_timer_page-->
+            <div class="open-stopwatch-bar"></div>
+            <div class="open-stopwatch half-circle-right"></div>
+            
+            <div id="popupDeleteStopwatchOverlay" class="popup_overlay"></div>
+            <div id="popupDeleteStopwatch" class="centron-alert-confirmation">
+                <div data-role="header" data-theme="a" class="ui-corner-top">
+                    <!--<h1>Remove Stopwatch?</h1>-->
+                    <h1>Transfer complete!</h1>
+                </div>
+                <div role="main" class="ui-corner-bottom ui-content">
+                    <!--<h3 class="ui-title">Delete Stopwatch from Stopwatch list?</h3>-->
+                    <h3 class="ui-title">Delete Stopwatch?</h3>
+                    <a href="#" class="remove_stopwatch_no " data-role="button" data-inline="true" data-rel="back" data-theme="a">Cancel</a>
+                    <a href="#" class="remove_stopwatch_yes " data-role="button" data-inline="true" data-rel="back" data-transition="flow" data-theme="b">Delete</a>
+                </div>
+            </div>
+            
+            <div id="popupOverwriteTimerDescNoteOverlay" class="popup_overlay"></div>
+            <div id="popupOverwriteTimerDescNote" class="centron-alert-confirmation">
+                <div data-role="header" data-theme="a" class="ui-corner-top">
+                    <h1 class="ui-title">Timer not empty</h1>
+                </div>
+                <div role="main" class="ui-corner-bottom ui-content">
+                    <h3 class="ui-title">Overwrite Description/Internal note?</h3>
+                    <a href="#" class="overwrite_timer_no" data-role="button" data-inline="true" data-rel="back" data-theme="a">No</a>
+                    <a href="#" class="overwrite_timer_yes" data-role="button" data-inline="true" data-rel="back" data-transition="flow" data-theme="b">Yes</a>
+                </div>
+            </div>
+
+        </div><!--#helpdesk_timers_page-->
+        
+        <div data-role='page' id='customer_page'>
+
+            <div class="header" data-role="header" data-tap-toggle="false" data-position="fixed">
+                <div class="backBtn" id="toHome"></div>
+                <span data-i18n="Customer" class="i18n pageTitle">Customer</span>
+                <span class="cb"></span>
+            </div>
+
+            <div data-role="content">
+
+                <div class="wrap">
+                    <label class="searchLable i18n" data-i18n="Search Text">Search Text</label>
+                    <input type="text" class="inputSearch_h" maxlength="80" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+                    <span class="icon-search icon-search_h"></span>
+                </div>
+
+                <div id="customer_wrapper">
+                    <div id="customer_scroller">
+                        <!--<div data-i18n="All tickets" class="title_container i18n">All tickets</div>-->
+
+                        <ul data-role="listview" data-autodividers="true" id="customer_list" data-divider-theme="d" data-theme="d"></ul>
+                        
+                        <div id="pull_up_customer">
+                            <span class="pullUpIcon"></span><span class="pullUpLabel i18n" data-i18n="Pull up to load more...">Pull up to load more...</span>
+                        </div>
+                    </div>
+                </div><!--#customer_wrapper-->
+                
+            </div>
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-info">
+                <p></p>
+            </div>
+
+            <div class="ws_error_message">
+                <h2 class="ws_error_header">Error</h2>
+                <div class="ws_error_close icon-cancel"></div>
+                <ul class="ws_error_content"></ul>
+            </div><!--.ws_error_message-->
+
+        </div><!--#customer_page-->
+        
+        <div data-role='page' id='customer_details_page'>
+            <div class="header" data-role="header" data-tap-toggle="false" data-position="fixed">
+                <div class="backBtn" id="backBtnCustomerDetails"></div>
+                <span class="pageTitle i18n" data-i18n="Customer">Customer</span>
+                <div class="select_customer i18n" data-i18n="Select Customer" >Select Customer</div>
+                <div id="customer_details_close" class="icon-cancel"></div>
+                <span class="cb"></span>
+            </div>
+            
+            <div data-role="content">
+
+                <h1 id="selected_customer_headline">
+                    <span id="selected_customer_i3d" class="customer_details_top" data-name="CustomerI3D">0</span>
+                    <span id="selected_customer_name" class="customer_details_top" data-name="CustomerName"></span>
+                    <span class="fav_customer_symbol"></span>
+                </h1>
+                
+                <div class="customer_details_info_address">
+                    <div class="customer_details_info">
+                    <h2 class="i18n" data-i18n="Information">Information</h2>
+                    <ul>
+                        <li></li>
+                        <li>
+                            <div class="field_label i18n" data-i18n="Phone">Phone</div>
+                            <div id="customer_details_phone" class="field_value" ></div>
+                        </li>
+                        <li>
+                            <div class="field_label">Telefax</div>
+                            <div id="customer_details_fax" class="field_value" ></div>
+                        </li>
+                        <li>
+                            <div class="field_label">E-Mail</div>
+                            <div id="customer_details_email" class="field_value" ></div>
+                        </li>
+                        <li>
+                            <div class="field_label i18n" data-i18n="Website">Website</div>
+                            <div id="customer_details_web" class="field_value" ></div>
+                        </li>
+                    </ul>
+                    </div>
+                    <h2 class="i18n" data-i18n="Addresses">Addresses</h2>
+                    <div class="customer_details_address"></div>
+                </div>
+                <div class="customer_details_contact">
+                    <h2 class="i18n contact_dropdown_label" data-i18n="Contact person">Contact person</h2>
+                    <!--<span class="contact_dropdown_opener icon-left-open"></span>-->
+
+                    <select id="customer_contact_dropdown" data-role="none" class="contact_dropdown"></select>
+                    <ul id="customer_contact_slider" class="contact_slider"></ul>
+                </div>
+            </div><!--content-->
+
+            <div data-role="footer" data-tap-toggle="false" data-position="fixed">
+                <div class="customer_button_container">
+                    <div class="list_helpdesk button icon-help"></div>
+                    <div class="button label">Helpdesk (<span id="customerHelpdeskCount"></span>)</div>
+                    <div class="button icon-plus customer_new_helpdesk"></div>
+                    
+                    <div class="list-crm button icon-doc-inv"></div>
+                    <div class="button label">CRM</div>
+                    <div class="button icon-plus new_crm"></div>
+                    
+                    <div class="button icon-info customer_sales_info"></div>
+                    <div class="button label sales customer_sales_info i18n" data-i18n="Sales Information">Sales Information</div>
+                    
+                    <div class="button icon-download download_customer"></div>
+                    <div class="button label download download_customer">Download</div>
+                    
+                    <div class="button icon-star fav_customer"></div>
+                    <div class="button label fav fav_customer i18n" data-i18n="Favourite">Favourite</div>
+                    <!--<div class="cb"></div>-->
+                </div>
+            </div><!--footer-->
+            
+            <div class="popup_overlay overlay_when_downloading"></div>
+            
+            <div data-role="popup" data-history="false" class="sales_information">
+                <h2 class="sales_info_header i18n" data-i18n="Sales Information">Sales Information</h2>
+                <div class="sales_info_close icon-cancel"></div>
+                <div class="main_table_class"></div>
+            </div>
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-info">
+                <p></p>
+            </div>
+            
+            <div data-role="popup" id="popupDeleteFavDialog" data-overlay-theme="a" data-theme="a" class="ui-corner-all centron-alert-confirmation" data-dismissible="false" data-history="false">
+                <div data-role="header" data-theme="a" class="ui-corner-top">
+                    <h1>Delete customer from your favourites?</h1>
+                </div>
+                <div role="main" class="ui-corner-bottom ui-content">
+                    <h3 class="ui-title">Confirm, please!</h3>
+                    <a href="#" class="remove_fav_no centron-alert-info" data-role="button" data-inline="true" data-rel="back" data-theme="a">Cancel</a>
+                    <a href="#" class="remove_fav_yes centron-alert-error" data-role="button" data-inline="true" data-rel="back" data-transition="flow" data-theme="b">Delete</a>
+                </div>
+            </div>
+
+            <div class="ws_error_message">
+                <h2 class="ws_error_header">Error</h2>
+                <div class="ws_error_close icon-cancel"></div>
+                <ul class="ws_error_content"></ul>
+            </div><!--.ws_error_message-->
+            
+        </div><!--#customer_details_page-->
+        
+        <div data-role='page' id='favorites_page'>
+        
+            <div class="header" data-role="header" data-tap-toggle="false" data-position="fixed">
+                <div class="backBtn" id="favorites_to_home"></div>
+                <span data-i18n="Favourite" class="i18n pageTitle">Favourite</span>
+                <span class="cb"></span>
+            </div>
+            <div data-role="content">
+                <h1 class="i18n" data-i18n="Your Favourites">Your Favourites</h1>
+                <ul data-role="listview" data-autodividers="true" id="favorites_list" data-divider-theme="d" data-theme="d">
+                </ul>
+            </div>
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-info">
+                <p></p>
+            </div>
+
+            <div class="ws_error_message">
+                <h2 class="ws_error_header">Error</h2>
+                <div class="ws_error_close icon-cancel"></div>
+                <ul class="ws_error_content"></ul>
+            </div><!--.ws_error_message-->
+
+        </div><!--#favorites_page-->
+        
+        <div data-role='page' id='fav_details_page'>
+            <div class="header" data-role="header" data-tap-toggle="false" data-position="fixed">
+                <div class="backBtn" id="back_to_fav"></div>
+                <span data-i18n="Favourite" class="i18n pageTitle">Favourite</span>
+                <div class="select_customer i18n" data-i18n="Select Customer" >Select Customer</div>
+                <div id="fav_details_close" class="icon-cancel"></div>
+                <span class="cb"></span>
+            </div>
+            
+            <div data-role="content">
+
+                <h1 id="selected_fav_headline">
+                    <span id="selected_fav_i3d" class="customer_details_top" data-name="CustomerI3D">0</span>
+                    <span id="selected_fav_name" class="customer_details_top" data-name="CustomerName"></span>
+                    <span class="fav_customer_symbol icon-star"></span>
+                </h1>
+                
+                <div class="customer_details_info_address">
+                    <div class="customer_details_info">
+                    <h2 class="i18n" data-i18n="Information">Information</h2>
+                    <ul>
+                        <li></li>
+                        <li>
+                            <div class="field_label i18n" data-i18n="Phone">Phone</div>
+                            <div id="fav_details_phone" class="field_value" ></div>
+                        </li>
+                        <li>
+                            <div class="field_label">Telefax</div>
+                            <div id="fav_details_fax" class="field_value" ></div>
+                        </li>
+                        <li>
+                            <div class="field_label">E-Mail</div>
+                            <div id="fav_details_email" class="field_value" ></div>
+                        </li>
+                        <li>
+                            <div class="field_label i18n" data-i18n="Website">Website</div>
+                            <div id="fav_details_web" class="field_value" ></div>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="customer_details_address">
+                        <h2 class="i18n" data-i18n="Addresses">Addresses</h2>
+                    </div>
+                </div>
+                <div class="customer_details_contact">
+                    <h2 class="i18n" data-i18n="Contact person">Contact person</h2>
+                    <!--<span class="contact_dropdown_opener icon-left-open"></span>-->
+                    <select data-role="none" id="fav_contact_dropdown" class="contact_dropdown"></select>
+                    <ul id="fav_contact_slider" class="contact_slider"></ul>
+                </div>
+            </div><!--content-->
+
+            <div data-role="footer" data-tap-toggle="false" data-position="fixed">
+                <div class="customer_button_container">
+                    <div class="list_helpdesk button icon-help"></div>
+                    <div class="button label">Helpdesk (<span id="favHelpdeskCount"></span>)</div>
+                    <div class="button icon-plus customer_new_helpdesk"></div>
+                    
+                    <div class="list-crm button icon-doc-inv"></div>
+                    <div class="button label">CRM</div>
+                    <div class="button icon-plus new_crm"></div>
+                    
+                    <div class="button icon-info customer_sales_info"></div>
+                    <div class="button label sales customer_sales_info i18n" data-i18n="Sales Information">Sales Information</div>
+                    
+                    <div class="button icon-download download_customer"></div>
+                    <div class="button label download download_customer">Download</div>
+                    
+                    <div class="button icon-star fav_customer"></div>
+                    <div class="button label fav fav_customer i18n" data-i18n="Favourite">Favourite</div>
+                    
+                    <!--<div class="cb"></div>-->
+                </div>
+            </div><!--footer-->
+            
+            <div data-role="popup" data-history="false" class="sales_information">
+                <h2 class="sales_info_header i18n" data-i18n="Sales Information">Sales Information</h2>
+                <div class="sales_info_close icon-cancel"></div>
+                <div class="main_table_class"></div>
+            </div>
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-info">
+                <p></p>
+            </div>
+            
+            <div class="popup_overlay overlay_when_downloading"></div>
+            
+            <div data-role="popup" id="popupDeleteFavDlg" data-overlay-theme="a" data-theme="a" style="max-width:400px;" class="ui-corner-all centron-alert-confirmation" data-dismissible="false" data-history="false">
+                <div data-role="header" data-theme="a" class="ui-corner-top">
+                    <h1>Remove favourite customer?</h1>
+                </div>
+                <div role="main" class="ui-corner-bottom ui-content">
+                    <h3 class="ui-title">Delete customer from your favourites?</h3>
+                    <a href="#" class="remove_fav_no centron-alert-info" data-role="button" data-inline="true" data-rel="back" data-theme="a">Cancel</a>
+                    <a href="#" class="remove_fav_yes centron-alert-error" data-role="button" data-inline="true" data-rel="back" data-transition="flow" data-theme="b">Delete</a>
+                </div>
+            </div>
+
+            <div class="ws_error_message">
+                <h2 class="ws_error_header">Error</h2>
+                <div class="ws_error_close icon-cancel"></div>
+                <ul class="ws_error_content"></ul>
+            </div><!--.ws_error_message-->
+            
+        </div><!--#fav_details_page-->
+        
+        <div data-role='page' id='todo_list_page'>
+            <div class="header" data-role="header" data-tap-toggle="false" data-position="fixed">
+                <div id="toDoListBack" class="backBtn" ></div>
+                <span class="pageTitle i18n" data-i18n="ToDo List">ToDo List</span>
+                <div class="closeBtn" id="open_todo_filters"></div>
+                <span class="cb"></span>
+
+                <div class="display_options">
+                    <input type="checkbox" class="WithDiscarded" id="WithDiscarded">
+                    <label for="WithDiscarded"><span  class="i18n" data-i18n="show discarded entries">show discarded entries</span></label>
+                    
+                    <input type="checkbox" class="OnlyOwn" id="OnlyOwn">
+                    <label for="OnlyOwn"><span  class="i18n" data-i18n="show all entries">show all entries</span></label>
+                    
+                    <span class="ToDateSpan i18n" data-i18n="Due date until">Due date until</span>
+                    <input type="text" class="ToDate" id="ToDate">
+
+                </div><!--.display_options-->
+            </div>
+
+            <div data-role="content">
+                <div id="todo_list_positioner">
+                    <div id="todo_list_wrapper">
+                        <div id="todo_list_scroller">
+                            <div id="todo_list_data" data-role="collapsible-set"></div>
+                            <div id="pull_up_todo_list">
+                                <span class="pullUpIcon"></span><span class="pullUpLabel i18n" data-i18n="Pull up to load more...">Pull up to load more...</span>
+                            </div>
+                        </div>
+                    </div><!--#todo_list_wrapper-->
+                </div><!--#todo_list_positioner-->
+
+            </div><!--content-->
+            
+            <div id="todo_details">
+            <div class="ticket_details">
+                <div class="close_ticket_details icon-cancel" ></div>
+                <!--
+                <h2 class="headline_text"></h2>
+                <h2 class="headline_text">due on 31.12.2013 23:00, record by AdministratorCelos (ADMIN)<span class="normal_text"> (at 06.03.2014 15:36)</span></h2>
+                -->
+                <p class="normal_text hd_description"><strong>Note</strong></p>
+                <div class="normal_text">
+                    <div class="ticket_details_col_1">
+                        <div class="ticket_details_field">
+                            <div class="field_label i18n" data-i18n="Number">Number</div>
+                            <div class="field_value helpdesk_number"></div>
+                        </div>
+                        <div class="ticket_details_field">
+                            <div class="field_label i18n" data-i18n="State">State</div>
+                            <div class="field_value hd_status" data-hd_status_i3d="4"></div>
+                        </div>
+                        <div class="ticket_details_field"><div class="field_label i18n" data-i18n="Due on">Due on</div><div class="field_value hd_due_date" ></div></div>
+                        <div class="ticket_details_field"><div class="field_label i18n" data-i18n="Record on">Record on</div><div class="field_value hd_record_date"></div></div>
+                        <div class="ticket_details_field"><div class="field_label i18n" data-i18n="Priority">Priority</div><div class="field_value"><label class="priority" data-hd_priority_i3d="1"></label></div></div>
+                        <div class="ticket_details_field"><div class="field_label i18n" data-i18n="Type">Type</div><div class="field_value hd_type"></div></div>
+                        <div class="ticket_details_field"><div class="field_label i18n" data-i18n="Main category">Main category</div><div class="field_value"><label class="main_cat"></label></div></div>
+                        <div class="ticket_details_field"><div class="field_label i18n" data-i18n="Sub category">Sub category</div><div class="field_value"><label class="sub_cat"></label></div></div>
+                        <div class="ticket_details_field"><div class="field_label i18n" data-i18n="Sub category2">Sub category2</div><div class="field_value"><label class="sub_cat2"></label></div></div>
+                        <div class="ticket_details_field"><div class="field_label i18n" data-i18n="Contract">Contract</div><div class="field_value"><label class="contract"></label></div></div>
+                        <div class="ticket_details_field"><div class="field_label i18n" data-i18n="Master data list">Master data list</div><div class="field_value"><label></label></div></div>
+                        <div class="ticket_details_field"><div class="field_label i18n" data-i18n="Responsible">Responsible</div><div class="field_value"><label class="responsible"></label></div></div>
+                        <div class="ticket_details_field"><div class="field_label i18n" data-i18n="Editor">Editor</div><div class="field_value editor"></div></div></div><!--.ticket_details_col_1-->
+                    <div class="ticket_details_col_2">
+                        <div class="ticket_details_field field_contact_person">
+                            <strong class="i18n" data-i18n="Contact person">Contact person</strong>
+                            <div class="contact_name"></div>
+                            <div><label class="email1"></label></div>
+                        </div>
+                        <div class="ticket_details_field field_contacts">
+                            <div class="field_label i18n" data-i18n="Phone">Phone</div>
+                            <div class="field_value"><label class="phoneBusiness1"></label></div>
+                        </div>
+                        <div class="ticket_details_field field_contacts">
+                            <div class="field_label">E-Mail</div>
+                            <div class="field_value"><label class="email1"></label>
+                            </div>
+                        </div>
+                        <div class="ticket_details_field field_customer">
+                            <strong class="i18n" data-i18n="Customer">Customer</strong>
+                            <div>
+                                <span class="CustomerI3D" data-address_i3d="15"></span>
+                            </div>
+                            <div class="CustomerName"></div>
+                            <div class="CustomerStreet"></div>
+                            <div>
+                                <span class="CustomerZip"></span>
+                                <span class="CustomerCity"></span>
+                            </div>
+                            <div><span class="customer_email"></span></div></div>
+                    </div><!--.ticket_details_col_2-->
+                    <!--
+                    <div class="ticket_details_col_3">
+                        <div class="ticket_details_field"><div class="field_value ContactPersonImage"><div class="customer_photo"><img src=""></div><span class="AdressContactI3D">25</span></div></div>
+                        <div class="ticket_details_field field_route"><label class="route_label"><strong>Route</strong></label><div class="route"></div></div></div>
+                    -->
+                </div><!--.normal_text-->
+            </div><!--.ticket_details-->
+            </div>
+
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-info">
+                <p></p>
+            </div>
+
+            <div class="ws_error_message">
+                <h2 class="ws_error_header">Error</h2>
+                <div class="ws_error_close icon-cancel"></div>
+                <ul class="ws_error_content"></ul>
+            </div><!--.ws_error_message-->
+            
+        </div><!--#todo_list_page-->
+        
+        <div data-role='page' id='hotline_page'>
+        
+            <div class="header" data-role="header" data-tap-toggle="false" data-position="fixed">
+                <div class="backBtn" id="hotline_to_home"></div>
+                <span data-i18n="Hotline" class="i18n pageTitle">Hotline</span>
+                <span class="cb"></span>
+            </div>
+            <div data-role="content">
+                <h1 class="i18n" data-i18n="Password">Password</h1>
+                <input type="password" id="password_hotline" maxlength="60" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" >
+                <button data-inline="true" data-mini="true" id="validate_hotline_password">Validate</button>
+            </div>
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-info">
+                <p></p>
+            </div>
+        
+            <div class="ws_error_message">
+                <h2 class="ws_error_header">Error</h2>
+                <div class="ws_error_close icon-cancel"></div>
+                <ul class="ws_error_content"></ul>
+            </div><!--.ws_error_message-->
+        </div><!--#hotline_page-->
+        
+        <div data-role='page' id='hotline_details_page'>
+        
+            <div class="header" data-role="header" data-tap-toggle="false" data-position="fixed">
+                <div class="backBtn" id="details_to_hotline"></div>
+                <span data-i18n="Hotline" class="i18n pageTitle">Hotline</span>
+                <div class="closeBtn" id="details_to_home"></div>
+                <span class="cb"></span>
+            </div>
+            <div></div>
+            <div data-role="content">
+                <div data-role="collapsible-set" id="hotline_details_data"></div>
+            </div>
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-info">
+                <p></p>
+            </div>
+            
+            <div data-role="footer" data-tap-toggle="false" data-position="fixed">
+                <div class="action_button_container">
+                    <div class="button new_hotline icon-plus"><a href="#-1" class="i18n" data-i18n="New">New</a></div>
+                    <div class="button edit_hotline icon-pencil"><a href="#-1" class="i18n" data-i18n="Edit">Edit</a></div>
+                    <div class="cb"></div>
+                </div>
+            </div><!--footer-->
+            
+            <div class="ws_error_message">
+                <h2 class="ws_error_header">Error</h2>
+                <div class="ws_error_close icon-cancel"></div>
+                <ul class="ws_error_content"></ul>
+            </div><!--.ws_error_message-->
+        </div><!--#hotline_details_page-->
+        
+        <div data-role='page' id="serial_number_page">
+          <div class="header" data-role="header" data-tap-toggle="false" data-position="fixed">
+            <div id="serial_number_back" class="backBtn"></div>
+            <span class="pageTitle i18n" data-i18n="Serial number - Management">Serial number - Management</span>
+
+          </div>
+          <!--.display_options-->
+          <div data-role="content">
+            <div class="wrap">
+              <label class="ui-input-text-label i18n" for="serial_number_input" data-i18n="Serial Number">Serial Number</label>
+              <input type="text" id="serial_number_input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <span class="icon-camera" id="icon_camera" style="float: left;width: 9%"></span>
+            <span class="icon-search" id="icon_search" style="float: left;width: 9%"></span>
+            <span class="icon-trash" id="icon_trash" style="float: left;width: 9%"></span>
+
+            </div>
+          </div>
+            <div class="barcode_main_container">
+                <div class="barcode-label i18n" data-i18n="Overview">Overview</div>
+                
+                <table id="barcode_table_heading" class='barcode_table' >
+                    <thead>
+                        <tr>
+                            <th scope="col" class="i18n sn-number" data-i18n="Serial Number">Serial Number</th>
+                            <th scope="col" class="i18n sn-article-code" data-i18n="Article code">Article code</th>
+                            <th scope="col" class="i18n sn-order" data-i18n="Order">Order</th>
+                            <th scope="col" class="i18n sn-delivery-note" data-i18n="Delivery Note">Delivery Note</th>
+                            <th scope="col" class="i18n sn-invoice" data-i18n="Invoice">Invoice</th>
+                        </tr>
+                    </thead>
+                </table>
+                
+                <div id="serial_number_wrapper">
+                    <div id="serial_number_scroller">
+
+                        <table id="barcode_table_data" class='barcode_table' >
+                            <tbody></tbody>
+                        </table>
+
+                        
+                        <div id="pull_up_serial_number">
+                            <span class="pullUpIcon"></span><span class="pullUpLabel i18n" data-i18n="Pull up to load more...">Pull up to load more...</span>
+                        </div>
+                    </div>
+                </div><!--#serial_number_wrapper-->
+                
+
+
+            </div>
+            <!-- pou up container begins -->
+            <div class="grey_pop_up_container">
+              <div class="padder">
+                <div class="close_ticket_details icon-cancel" ></div>
+                <div class="header_style">Information</div>
+                <div class="serial_details">
+                    <div class="info_row">
+                        <div class="label_block i18n sn_article_code" data-i18n="Article code">Article code</div>
+                        <div class="value_block">&nbsp;</div>
+
+                        <div class="label_block sn_information">Information</div>
+                        <div class="value_block">&nbsp;</div>
+                        <div class="cb"></div>
+                    </div>
+
+                    <div class="info_row sn-desc-row">
+                        <div class="label_block i18n sn_description" data-i18n="Description">Description</div>
+                        <div class="value_block">&nbsp;</div>
+                        <div class="cb"></div>
+                    </div>
+
+                    <div class="info_row">
+                        <div class="label_block i18n sn_goods_receipt" data-i18n="Goods receipt">Goods receipt</div>
+                        <div class="value_block">&nbsp;</div>
+
+                        <div class="label_block i18n sn_age_in_months" data-i18n="Age in months">Age in months</div>
+                        <div class="value_block">&nbsp;</div>
+                        <div class="cb"></div>
+                    </div>
+
+                    <div class="info_row">
+                        <div class="label_block i18n sn_receipt_date" data-i18n="Goods receipt from">Goods receipt from</div>
+                        <div class="value_block">&nbsp;</div>
+                        <div class="cb"></div>
+                    </div>
+                    
+                    <div class="info_row">
+                        <div class="label_block i18n sn_invoice" data-i18n="Invoice">Invoice</div>
+                        <div class="value_block">&nbsp;</div>
+                        <div class="cb"></div>
+                    </div>
+                    
+                    <div class="info_row">
+                        <div class="label_block i18n sn_invoice_date" data-i18n="Invoice Date">Invoice Date</div>
+                        <div class="value_block">&nbsp;</div>
+                        <div class="cb"></div>
+                    </div>
+                    <div class="cb"></div>
+                </div>
+
+              </div>
+              <div class="cb"></div>
+            </div>
+            <!-- pou up container ends -->
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-info">
+                <p></p>
+            </div>
+
+            <div class="ws_error_message">
+                <h2 class="ws_error_header">Error</h2>
+                <div class="ws_error_close icon-cancel"></div>
+                <ul class="ws_error_content"></ul>
+            </div><!--.ws_error_message-->
+        </div><!--#serial_number_page-->
+        
+        <div data-role='page' id="article_page">
+
+            <div class="header" data-role="header" data-tap-toggle="false" data-position="fixed">
+                <div id="article_to_home" class="backBtn"></div>
+                <span class="pageTitle i18n" data-i18n="Article Search">Article Search</span>
+            </div>
+
+            <div data-role="content">
+                <div class="distributor_filter">
+                    <div class="distributor_filter_container">
+                        <label for="distributor_dropdown" class="ui-input-text-label ui-input-text i18n" data-i18n="Distributor">Distributor</label>
+                        <select data-role="none" id="distributor_dropdown"></select>
+                    </div>
+                    <div class="distributor_text_filter_container">
+                        <input type="text" id="distributor_search_text" maxlength="100" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                        <span class="icon-camera" id="bc_article_search" ></span>
+                        <span class="icon-search" id="article_search" ></span>
+                    </div>
+                </div><!--.distributor_filter-->
+                
+                <div id="article_wrapper">
+                    <div id="article_scroller">
+
+                        <div id="article_accordion" data-role="collapsible-set"></div>
+        
+                        <div id="pull_up_article">
+                            <span class="pullUpIcon"></span><span class="pullUpLabel i18n" data-i18n="Pull up to load more...">Pull up to load more...</span>
+                        </div>
+                    </div><!--#article_scroller-->
+                </div><!--#article_wrapper-->
+                
+
+            </div><!--content-->
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-info">
+                <p></p>
+            </div>
+
+            <div class="ws_error_message">
+                <h2 class="ws_error_header">Error</h2>
+                <div class="ws_error_close icon-cancel"></div>
+                <ul class="ws_error_content"></ul>
+            </div><!--.ws_error_message-->
+            
+        </div><!--#article_page-->
+        
+        <div data-role='page' id='crm_page'>
+            <div class="header" data-role="header" data-tap-toggle="false" data-position="fixed">
+                <div class="backBtn" id="crm_to_home"></div>
+                <span class="pageTitle">CRM</span>
+                <div class="closeBtn" id="crm_filter_toggle"></div>
+                <span class="cb"></span>
+                
+                <div class="helpdesk_display_options">
+                    
+                    <div class="display_options">
+                        <h4 class="display_options_title display i18n" data-i18n="Display">Display</h4>
+                        
+                        <input type="radio" name="all_crm" id="all_crm" value="all_crm"/>
+                        <label for="all_crm"><span class="i18n" data-i18n="all CRM">all CRM</span></label>
+                        
+                        <input type="radio" name="all_crm" id="my_crm" checked value="my_crm"/>
+                        <label for="my_crm"><span class="i18n" data-i18n="only my CRM">only my CRM</span></label>
+                        
+                        <input type="checkbox" name="closed_crm" id="closed_crm" value="closed_crm"/>
+                        <label for="closed_crm"><span class="i18n" data-i18n="show closed CRM">show closed CRM</span></label>
+                    </div><!--.display_options-->
+
+                    <div class="cb"></div>
+                </div>
+            </div>
+            
+            <div data-role="content">
+                
+                <div id="crm_wrapper">
+                    <div id="crm_scroller">
+                        <div data-i18n="All activities" class="title_container i18n">All activities</div>
+
+                        <ul id="crm_ticket_list"></ul>
+        
+                        <div id="pull_up_crm">
+                            <span class="pullUpIcon"></span><span class="pullUpLabel i18n" data-i18n="Pull up to load more...">Pull up to load more...</span>
+                        </div>
+                    </div><!--#crm_scroller-->
+                </div><!--#crm_wrapper-->
+
+                <div id="crm_ticket_details"></div>
+            </div><!--content-->
+
+            <div data-role="footer" data-tap-toggle="false" data-position="fixed">
+                <div class="action_button_container">
+                    <div class="button new_crm icon-plus" data-i18n="New">
+                        <a href="#-1" class="i18n" data-i18n="New">New</a>
+                    </div>
+                    <div class="button edit_crm icon-pencil" data-i18n="Edit">
+                        <a href="#-1" class="i18n" data-i18n="Edit">Edit</a>
+                    </div>
+                    <div class="cb"></div>
+                </div>
+            </div><!--footer-->
+            
+            <div data-role="popup" data-history="false" data-overlay-theme="b" class="centron-alert centron-alert-info">
+                <p></p>
+            </div>
+            
+            <div class="ws_error_message">
+                <h2 class="ws_error_header">Error</h2>
+                <div class="ws_error_close icon-cancel"></div>
+                <ul class="ws_error_content"></ul>
+            </div><!--.ws_error_message-->
+            
+            <div id="new_edit_CRM_popup_overlay" class="popup_overlay"></div>
+
+            <div id="new_edit_CRM_popup" class="new_edit_HD_main">
+                <div id="new_edit_CRM_popup_close" class="close_popup icon-cancel"></div>
+
+                <div class="crm_popup_main_heading fl">
+                    <span class="crm-popup-heading">CRM Activity</span>
+                    <span class="crm-record-by">Volker</span>
+                </div>
+                    
+                <div class="new_edit_HD_main_table">
+
+                    <div class="new_edit_HD_row crm_type_container"></div>
+
+                    <div class="new_edit_HD_row">
+                        <label class="new_edit_HD_clear_left_padding i18n" data-i18n="Short Description">Short Description</label>
+                        <input data-role="none" id="crm_short_description" type="text" maxlength="255" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+                        <div class="cb"></div>
+                    </div>
+
+                    <div class="new_edit_HD_row">
+                        <label class="new_edit_HD_clear_left_padding i18n" data-i18n="Description">Description</label>
+                        <textarea data-role="none" id="crm_description" maxlength="5000" cols="10" rows="3" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+                        <div class="cb"></div>
+                    </div>
+
+                    <div class="new_edit_HD_row">
+                        <div class="new_edit_HD_column">
+                            <label class="new_edit_HD_clear_left_padding i18n" data-i18n="Contact person">Contact person</label>
+                            <div class="menu_container">
+                                <select data-role="none" id="crm_contact_person"></select>
+                            </div>
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+                    
+                    <div class="new_edit_HD_row">
+                        <div class="new_edit_HD_column new_edit_HD_date">
+                            <label class="new_edit_HD_clear_left_padding crm-label-due-date i18n" data-i18n="Due date">Due date</label>
+                            <div>
+                                <input id="crm_due_date" data-role="none" type="text" class="crm_date_picker" maxlength="8">
+                            </div>
+                        </div>
+                        <div class="new_edit_HD_column new_edit_HD_date crm-end-date">
+                            <label class="new_edit_HD_clear_left_padding i18n" data-i18n="End date">End date</label>
+                            <div>
+                                <input id="crm_end_date" data-role="none" type="text" class="crm_date_picker" maxlength="8">
+                            </div>
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+
+                    <div class="new_edit_HD_row">
+                        <div class="new_edit_HD_column new_edit_HD_date">
+                            <label class="new_edit_HD_clear_left_padding crm-label-followup-date i18n" data-i18n="Resubmission" >Resubmission</label>
+                            <div>
+                                <input id="crm_followup_date" data-role="none" type="text" class="crm_date_picker" maxlength="8">
+                            </div>
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+
+                    <div class="new_edit_HD_row">
+                        <div class="new_edit_HD_column">
+                            <label class="new_edit_HD_clear_left_padding i18n" data-i18n="To do by">To do by</label>
+                            <div class="menu_container">
+                                <select data-role="none" id="crm_receiver_employee"></select>
+                            </div>
+                            <div class="cb"></div>
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+
+                    <div class="new_edit_HD_row">
+                        <div class="new_edit_HD_column crm_status_column">
+                            <label class="new_edit_HD_clear_left_padding i18n" data-i18n="State">State</label>
+                            <div class="crm_status_container">
+                                <select name="slider" id="crm_status" data-role="slider" data-theme="a">
+                                    <option value="0" class="i18n" data-i18n="Open">Open</option>
+                                    <option value="1" class="i18n" data-i18n="Closed">Closed</option>
+                                </select>
+                            </div>
+                            <div class="cb"></div>
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+
+                <div class="cb"></div>
+                </div>
+
+                <div class="HDTimer_popup_footer">
+                    <button id="crm_cancel" data-inline="true" >Cancel</button>
+                    <button id="crm_submit" data-inline="true" >Save</button>
+                    <div class="cb"></div>
+                </div>
+            </div><!--.new_edit_HD_main-->
+        </div><!--#crm_page-->
+
+    </body>
+</html>

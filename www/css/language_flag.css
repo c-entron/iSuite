@@ -1,0 +1,28 @@
+/*W3C CSS Validated on 21 May 2014*/
+
+.english, .german {
+    background-repeat: no-repeat;
+    background-position: 6% center;
+    padding-left: 30%;
+}
+.english {
+    background-image: url('images/english_flag.png');
+}
+.german {
+    background-image: url('images/german_flag.png');
+}
+.buttons_user_date_time_container .ui-select {
+    display: inline-block;
+    top: -6px;
+}
+#language_select-menu .ui-btn-text a {
+	color: #666;
+	font-size: 14px;
+	font-family: 'Open Sans';
+}
+#language_select-menu .ui-btn-active.ui-focus .ui-btn-text a {
+	color: #fff;
+}
+#language_select-listbox {
+    background: #aaa;
+}

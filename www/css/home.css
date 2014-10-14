@@ -1,0 +1,524 @@
+/*W3C CSS Validation on 21 May 2014: Property pointer-events doesn't exist : none*/
+/*CSS Validated on 21 May 2014 by http://csslint.net*/
+
+/* Home Page CSS [QuickSuite Wheel] */
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url(font/OpenSans-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans'), url(font/OpenSans-LightItalic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), url(font/OpenSans-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans'), url(font/OpenSans-Italic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans'), url(font/OpenSans-Semibold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans'), url(font/OpenSans-SemiboldItalic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans'), url(font/OpenSans-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans'), url(font/OpenSans-BoldItalic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans'), url(font/OpenSans-ExtraBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans'), url(font/OpenSans-ExtraBoldItalic.ttf) format('truetype');
+}
+h1, h2, h3, h4, h5, h6, div, p  {
+  font-family: 'Open Sans';
+}
+
+
+html, body {
+    margin: 0px;
+
+    width: 100% !important;
+	height:10% !important;
+    overflow-x:hidden !important;
+}
+
+#home_page .header-view {
+	width: 442px;
+	position: absolute;
+	text-align: center;
+	margin-top: 25px;
+	margin-left: 158px;
+	background: #EA9E10;
+	color: #ffffff;
+	/*font: normal 18px verdana;*/
+    font-style: normal;
+    font-size: 18px;
+	border-radius: 5px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+    text-transform: none;
+}
+
+#home_page .subheader-view {
+	width: 442px;
+	position: absolute;
+	margin-top: 90px;
+	margin-left: 158px;
+	background: #ffffff;
+	color: #484848;
+	/*font: normal 18px verdana;*/
+    font-style: normal;
+    font-size: 18px;
+	border-radius: 5px;
+	height: 40px;
+	line-height: 40px;
+	border: solid 1px #cccccc;
+	display: inline-block;
+    text-transform: none;
+}
+
+#home_page .full-view {
+	width: 100% !important;
+	height: 100% !important;
+    text-transform: none;
+}
+/*
+#home_page .left-button{
+	background-image: url(../img/images/red-corner.png);
+	width: 147px;
+	height: 277px;
+	background-size: cover;
+	margin-top: 95px;
+	margin-left: 92px;
+	position: absolute;
+	display: inline-block;
+}
+*/
+#home_page #infobox{
+    width: 350px;
+    position: absolute;
+    text-align: center;
+    margin-top: 210px;
+    margin-left: 270px;
+    /*background: #00a0e1;*/
+    color: #ffffff;
+    /*font: normal 18px verdana;*/
+    font-size: 18px;
+    font-family: 'Open Sans';
+    border-radius: 5px;
+    height: 30px;
+    line-height: 26px;
+    display: inline-block;
+    text-transform: none;
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+}
+#infobox.helpdesk {
+	background-color: #00a2e1;
+}
+#infobox.customer_search {
+	background-color: #69A024;
+}
+#infobox.serial_number {
+	background-color: #FF3729;
+}
+#infobox.article_search {
+	background-color: #008A9C;
+}
+#infobox.favourites {
+	background-color: #FFB400;
+}
+#infobox.hotline {
+	background-color: #1A4A8D;
+}
+/*
+*Renamed after client instruction on 23 Dec 2013
+#infobox.documents
+*/
+#infobox.todo_list {
+	background-color: #c35896;
+}
+#infobox.c_r_m {
+	background-color: #00adbd;
+}
+/*
+#home_page .right-button {
+	background-image: url(../img/images/purple_corner.png);
+	width: 147px;
+	height: 269px;
+	background-size: cover;
+	margin-top: 102px;
+	margin-left: 506px;
+	position: absolute;
+	display: inline-block;
+}
+
+.outer-container{
+ background-image: url(../img/images/centronWheel.png);
+ width: 400px;
+ height: 403px;
+ background-size: cover;
+ margin-top: 280px;
+ margin-left: 180px;
+ position: absolute;
+ }
+ 
+#home_page .selected-mask{
+ background-image: url(../img/images/dial-1.png);
+ position: relative;
+ height: 128px;
+ width: 150px;
+ background-size: cover;
+ top: 0%;
+ left: 30%;
+ }
+*/
+#home_page .middle-image {
+	background-image: url(../img/images/innercircle.png);
+	margin-top : 380px;
+	margin-left: 266px;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	display: inline-block;
+}
+/*
+#home_page .bottom-left-button{
+	background-image: url(../img/images/yellow_corner.png);
+	width: 151px;
+	height: 255px;
+	background-size: cover;
+	margin-top: 582px;
+	margin-left: 92px;
+	position: absolute;
+	display: inline-block;
+}
+
+#home_page .bottom-center-display{
+	width: 200px;
+	position: absolute;
+	margin-top: 720px;
+	margin-left: 270px;
+	background: #ffffff;
+	color: #484848;
+	/*font: normal 18px verdana;*/
+    font-style: normal;
+    font-size: 18px;
+	border-radius: 5px;
+	height: 40px;
+	line-height: 40px;
+	border: solid 1px #cccccc;
+	display: inline-block;
+    text-transform: none;
+}
+
+#home_page .bottom-right-button{
+	background-image: url(../img/images/green_corner.png);
+	width: 155px;
+	height: 257px;
+	background-size: cover;
+	margin-top: 585px;
+	margin-left: 505px;
+	position: absolute;
+	display: inline-block;
+}
+*/
+body, ul, li, div { padding:0; margin:0; }
+body {  }
+
+#home_page #wheel {
+	margin-top:280px ;
+	margin-left:180px;
+	position:absolute;
+	z-index:1;
+	width:388px;
+	height:388px;
+	overflow:hidden;
+	
+	
+}
+
+
+
+/*#home_page #test {*/
+#home_page #selected_module {
+	/*margin-top: -2px;*/
+	margin-left: 113px;
+	height: 128px;
+	width: 150px;
+	position : absolute;
+	z-index: 30000;
+	background-image:url(../img/images/dial-1.png);
+	background-repeat:no-repeat;
+	background-size: contain;
+}
+
+/*#home_page #image {*/
+#home_page #module_image {
+/*
+	margin-left:48px;
+	margin-top:30px;
+	position:relative;
+	display: inline-block;
+    z-index: 40000;
+*/
+    position:relative;
+    top: 30px;
+    left: 48px;
+    display: inline-block;
+    z-index: 40000;
+    width: 60px;
+    height: 65px;
+}
+#module_image img {
+    z-index: 50000;
+}
+#home_page ul#centronWheel {
+	position:absolute;
+	z-index:10;
+	width:388px;
+	height:388px;
+	-webkit-transform-origin:50% 50%;
+	-webkit-transform:rotateZ(0rad);
+}
+
+
+#home_page ul#centronWheel li {
+	position:absolute;
+	z-index:11;
+	background-image:url(../img/images/centronWheel.png);
+	background-repeat:no-repeat;
+	width:388px;
+	height:388px;
+	overflow:hidden;
+	-webkit-transform-origin:38px 138px;
+	-webkit-transition-timing-function:ease-out;
+	-webkit-transition-duration:800ms;
+	background-size: cover;
+}
+/*
+#home_page p { 
+	margin-top:0;
+	margin-left: 0;
+	position:absolute;
+	z-index:10000;
+	font-size:12px;
+	font-family: "Open Sans";
+	padding:2px;
+	color: #ffffff;
+    background-color: red;
+}
+
+.formRow label{
+	width:200px;
+    font-style: normal;
+    font-size: 18px;
+	display:block; 
+    text-transform: none;
+	float:left;
+}
+.formRow input[type="text"]{ font-size"14pt !important;}
+*/
+.wheel_main_container{ width:750px; margin: 50px auto 0 auto;height: 850px;}
+
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.wheel_main_container { margin-top:0px !important;}
+
+	#home_page #infobox {
+			margin: 0;
+			top: 0px;
+			left: 72px;
+		}
+	#home_page #wheel {
+		top: 56px;
+		left: 56px;
+		margin: 0;
+	}
+	#home_page .middle-image {
+		top: 154px;
+		left: 144px;
+		margin: 0;
+	}
+    #home_page #wheel {
+        left: 80px;
+        top: 40px;
+    }
+    #home_page .middle-image {
+        left: 165px;
+        top: 130px;
+    }
+    #home_page #infobox {
+        left: 90px;
+        top: 0;
+    }
+    #tap_receiver {
+        left: 240px;
+        top: 70px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #tap_receiver {
+        left: 340px;
+        top: 130px;
+    }
+    #home_page .middle-image {
+        top: 190px;
+        left: 266px;
+        margin: 0;
+    }
+
+    #home_page #wheel {
+        top: 100px;
+        left: 180px;
+        margin: 0;
+    }
+    #home_page #infobox {
+        top: 40px;
+        left: 196px;
+    }
+}
+    #home_page #wheelbox {
+        position:absolute;
+        z-index:100;
+        width:388px;
+        height:388px;
+    }
+
+#home_page .bottom-center-display {
+    margin-top: 0;
+}
+#home_page #infobox {
+    margin: 0;
+    font-family: "Open Sans";
+    border-radius: 5px;
+}
+
+.wheel_main_container{ width: 100%; margin: 0 auto; }
+#home_page .bottom-center-display {
+    position: static;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+#wheel_selected_customer {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 94%;
+    margin: 10px auto 0;
+}
+
+#centronWheel, #wheelgraph {
+    pointer-events: none;
+}
+#tap_receiver {
+    width: 63px;
+    height: 60px;
+    position: absolute;
+    z-index: 50000;
+}
+#remove_selected_customer {
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: right;
+    position: relative;
+    top: -4px;
+}
+
+#remove_selected_customer[class^="icon-"]::before, #remove_selected_customer[class*=" icon-"]::before {
+    width: 20px;
+    line-height: 20px;
+    height: 20px;
+    color: #DDD;
+    font-size: 24px;
+    margin-left: 0px;
+    border: 1px solid #DDD;
+    border-radius: 20px;
+    padding: 4px;
+}
+#remove_selected_customer.active[class^="icon-"]::before,
+#remove_selected_customer[class*=" icon-"]::before {
+    color: #6EA223;
+    border: 1px solid #6EA223;
+    text-shadow: none;
+}
+#popupConfirmUploadDialog .ui-header {
+    background: #EF9C00;
+}
+#popupConfirmUploadDialog .ui-title {
+	margin: .6em 10% .8em;
+    text-shadow: none;
+}
+.upload_msg {
+	margin: 10px 0 10px 20px;
+}
+.upload_msg li {
+    font-size: 16px;
+}
+.popup_overlay.overlay_when_uploading,
+.popup_overlay.overlay_when_downloading {
+    width: 100%;
+    height: 100%;
+    opacity: 0.18;
+    background: transparent;
+}
+.popup_overlay.overlay_when_uploading .ajax-loader,
+.popup_overlay.overlay_when_downloading .ajax-loader {
+    background: url(images/ajax-loader.gif) center center no-repeat;
+    width: 100%;
+    height: 100%;
+}
+#language_select-button .ui-btn-inner {
+    border: none;
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #home_page {
+        height: 748px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #home_page {
+        height: 1004px !important;
+    }
+}

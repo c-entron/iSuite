@@ -1,0 +1,214 @@
+/*W3C CSS Validated on 21 May 2014*/
+
+#crm_page {
+    min-height: 888px !important;
+    height: 888px !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+}
+#crm_page .header {
+    background: #00ADBD;
+}
+label[for="all_crm"], label[for="my_crm"], label[for="closed_crm"] {
+    background: none transparent;
+    border: none;
+}
+.crm-object-i3d {
+    float: right;
+    border-left: 1px solid #000;
+    padding-left: 10px;
+}
+#crm_page .info_container.user_select {
+    border: 1px solid #00ADBD;
+}
+#crm_page .info_container.user_selected .col1 {
+    background: #00ADBD;
+}
+.crm_description {
+    max-height: 4.5em;
+    overflow: scroll;
+    margin: 1em 0;
+    font-weight: bold;
+}
+#crm_ticket_details .field_label, #crm_ticket_details .field_value {
+    width: 50%;
+}
+.crm_type {
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.type_zero {
+    background-image: url(crm_type/CRM0.png);
+}
+.type_one  {
+    background-image: url(crm_type/CRM1.png);
+}
+.type_two  {
+    background-image: url(crm_type/CRM2.png);
+}
+.type_three  {
+    background-image: url(crm_type/CRM3.png);
+}
+.type_four  {
+    background-image: url(crm_type/CRM4.png);
+}
+
+.crm_type_container .ui-radio {
+    display: inline-block;
+    clear: none;
+}
+.crm_type_container .ui-radio label {
+    width: auto;
+    background: #fff;
+    padding-left: 0;
+}
+.crm_type_container .ui-radio label .ui-btn-inner {
+    padding-left: 30px;
+}
+.crm_type_container .ui-radio label .ui-icon-radio-on {
+    background-image: none;
+}
+.crm_type_container .ui-radio .ui-icon {
+    left: 0px;
+}
+#new_edit_CRM_popup .HDTimer_popup_footer {
+    margin-top: 1em;
+}
+.crm_status_container {
+    display: inline-block;
+}
+
+#new_edit_CRM_popup .crm_date_picker {
+    border: none;
+}
+#new_edit_CRM_popup .new_edit_HD_column,
+#new_edit_CRM_popup .new_edit_HD_column label,
+#new_edit_CRM_popup .new_edit_HD_column div {
+    vertical-align: middle;
+}
+#crm_short_description,
+#crm_description {
+    margin-left: 2px;
+}
+#new_edit_CRM_popup .new_edit_HD_column.new_edit_HD_date {
+    width: 52%;
+    padding: 0;
+}
+#new_edit_CRM_popup .new_edit_HD_column.new_edit_HD_date.crm-end-date.time-schedule {
+    margin-top: 8px;
+}
+.crm_popup_main_heading {
+    width:100%;
+    background: #00ADBD;
+    padding: 4px 0;
+}
+.crm_status_container div.ui-slider-switch {
+    width: 9em;
+}
+.crm_status_container a.ui-slider-handle.ui-btn {
+    background: #00ADBD;
+}
+.crm_status_container span.ui-slider-label {
+    color: #00ADBD;
+    background: #eee;
+}
+.new_edit_HD_column.new_edit_HD_date.crm-end-date {
+    display: none;
+}
+.new_edit_HD_column.new_edit_HD_date.crm-end-date.time-schedule {
+    display: block;
+}
+.crm-popup-heading {
+    font-family:'Open Sans', sans-serif;
+    font-size:25px; 
+    color: #fff;
+    margin-left: 20px;
+}
+.crm-record-by {
+    float: right;
+    margin-right: 50px;
+    font-size: 15px;
+    text-shadow: none;
+    line-height: 30px;
+    color: #eee;
+}
+.crm_status_container .ui-slider-switch .ui-btn.ui-slider-handle {
+	width: 28px;
+	height: 30px;
+}
+.crm-name.normal_text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 2.0em;
+}
+.description.subhead_text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.menu_container .ui-input-text {
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    #crm_page {
+        min-height: 888px !important;
+        height: 888px !important;
+    }
+    .crm_type_container .ui-radio {
+        width: 24%;
+    }
+    #new_edit_CRM_popup .crm_date_picker {
+        width: 207px;
+    }
+    #new_edit_CRM_popup .new_edit_HD_column {
+        width: 100%;
+    }
+    #new_edit_CRM_popup .new_edit_HD_column > label {
+        width: 136px;
+    }
+    #new_edit_CRM_popup_overlay {
+        height: 1004px;
+    }
+    .crm_type_container .ui-radio label {
+        margin: 0;
+    }
+    .new_edit_HD_row .crm_type_label {
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        width: 100%;
+    }
+    .crm_type_container .ui-radio label .ui-btn-inner { 
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #crm_page {
+        min-height: 694px !important;
+        height: 694px !important;
+    }
+    #crm_page .info_container .col1 {
+        width: 34%;
+    }
+    #crm_page .info_container .col2 {
+        width: 66%;
+    }
+    .crm_type_container .ui-radio {
+        width: 20%;
+    }
+    #new_edit_CRM_popup .crm_date_picker {
+        width: 240px;
+    }
+    #new_edit_CRM_popup_overlay {
+        height: 748px;
+    }
+    .new_edit_HD_row .crm_type_label {
+        height: 58px;
+        line-height: 58px;
+    }
+}

@@ -1,0 +1,127 @@
+/*W3C CSS Validated on 21 May 2014*/
+
+@media only screen and (max-width: 768px) {
+    #todo_list_page {
+        height: 940px !important;
+        min-height: 940px !important;
+    }
+    #todo_list_positioner {
+        height: 920px;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #todo_list_page {
+        min-height: 684px !important;
+        height: 684px !important;
+    }
+    #todo_list_positioner {
+        height: 664px;
+    }
+}
+#todo_list_page {
+    font-family: 'Open Sans';
+}
+#todo_list_positioner {
+    position: relative;
+    width: 100%;
+}
+#todo_list_page p {
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+#todo_list_page div[data-role="header"] {
+    background-color: #c35896;
+}
+#todo_list_page .ui-checkbox {
+    z-index: inherit;
+}
+#todo_list_page .ui-checkbox label{background:none; border:none; }
+#todo_list_page .ui-checkbox label span{font-size:18px; color:#564D4D;}
+#todo_list_page span.ToDateSpan{color:#564D4D; text-shadow: none; font-weight: normal; font-size: 18px; float: left; padding: 10px 12px;}
+
+
+#todo_list_page div.ui-input-text{
+    float:left;
+    border-radius:5px; 
+    border:1px solid #564d4d; 
+    background:#fff; 
+    z-index: inherit;
+}
+#todo_list_page a span.ui-btn-inner span.ui-btn-text{
+    color:#fff; 
+    text-shadow:none;
+    font-family: 'Open Sans';
+}
+
+#todo_list_page .display_options{
+    background: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    transition: opacity 1s ease-out;
+    z-index: -100;
+    height: 0;
+    width:100%;
+    display: none;
+}
+#todo_list_page .display_options.todo_filters_visible {
+    opacity: 1;
+    z-index: 10000;
+    height: 126px;
+    display: block;
+}
+#todo_list_page #ToDate {
+    color: #564D4D;
+    text-shadow: none;
+    text-align: center;
+}
+.centron_icon [class*=" ui-icon-"] {
+    box-shadow: none;
+    background: none;
+    text-indent: 0;
+    border: 1px solid #ddd;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    line-height: 0px;
+    font-size: 16px;
+}
+.centron_icon [class*=" ui-icon-"]:before {
+    display: inline-block;
+    font-family: "centronicons";
+/*
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+*/
+    width: 1em;
+    position: relative;
+    left: 2px;
+    top: 3px;
+}
+.ui-icon-down-open:before {
+    content: '\e75f';
+}
+.ui-icon-up-open:before {
+    content: '\e75c';
+}
+#todo_details {
+    display: none;
+}
+#todo_details .ticket_details {
+    display: block;
+    height: 100%;
+}
+#todo_details .ticket_details_col_1 {
+    width: 69%;
+}

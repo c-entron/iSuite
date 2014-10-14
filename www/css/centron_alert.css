@@ -1,0 +1,40 @@
+/*W3C CSS Validated on 21 May 2014*/
+
+.centron-alert {
+    background-image: none;
+	padding: 8px 35px 8px 14px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	box-shadow: none;
+	font-family: 'Open Sans';
+}
+
+/*bluish*/
+.centron-alert-info {
+    background: #D9EDF7;
+    background-color: #D9EDF7;
+    border: 1px solid #BCE8F1;
+    color: #3A87AD;
+}
+
+/*reddish*/
+.centron-alert-error {
+    background: #F2DEDE;
+    background-color: #F2DEDE;
+    border: 1px solid #EED3D7;
+    color: #B94A48;
+}
+
+/*greenish*/
+.centron-alert-success {
+    background: #DFF0D8;
+    background-color: #DFF0D8;
+    border-color: #D6E9C6;
+    color: #468847;
+}
+.centron-alert-confirmation {
+    background: #FFF;
+    background-color: #FFF;
+    border-color: #DDD;
+    color: #666;
+    text-shadow: none;
+}

@@ -1,0 +1,42 @@
+/*W3C CSS Validated on 21 May 2014*/
+
+#serial_number_wrapper {
+    position:absolute;
+    z-index:1;
+    bottom: 0;
+    left:-9999px;
+    width: 98%;
+    background:#aaa;
+    overflow:auto;
+    background: transparent;
+}
+#serial_number_scroller {
+	position:absolute; z-index:1;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	width:100%;
+	padding:0;
+}
+#pull_up_serial_number {
+    background:#fff;
+    height:40px;
+    line-height:40px;
+    padding:5px 10px;
+    border-bottom:1px solid #ccc;
+    font-weight:bold;
+    font-size:14px;
+    color:#888;
+    clear: both;
+    margin: 20px 0 30px;
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	#serial_number_wrapper {
+		top: 230px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#serial_number_wrapper {
+		top: 244px;
+	}
+
+}

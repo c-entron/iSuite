@@ -1,0 +1,403 @@
+/*W3C CSS Validated on 21 May 2014*/
+
+#login_page .header{
+	background:#1abc9c; 
+	text-align:center; 
+	color:#ffffff;
+    text-transform: none;
+}
+
+#login_page .backBtn{
+	display:block; 
+	float:left; 
+	width:28px; 
+	height:28px;
+	background:url(../img/LoginScreen/back.png) no-repeat 0 0;
+}
+
+#login_page .closeBtn{
+	display:block; 
+	float:right; 
+	width:28px; 
+	height:28px; 
+	background:url(../img/LoginScreen/close.png) no-repeat 0 0;
+}
+
+#login_page #mainBox{
+	min-height:100%; 
+	height: 100%;
+    width:100%; 
+	margin:0 auto -34px;
+    background-color: transparent;
+    background-image: none;
+    position: absolute;
+    display:block;
+    border: none;
+}
+
+
+#login_page .contentBox{
+	width:100%;
+	margin:0 auto; 
+	padding:50px 0 0;
+    display:block; 
+}
+
+#login_page .listRow{
+	border:1px solid #1abc9c; 
+	padding:5px; 
+	width:400px; 
+	font:normal 18px "Open Sans"; 
+	color:#1abc9c; 
+	border-radius:5px; 
+	margin:0 auto 20px; 
+	background:#ffffff;
+}
+
+#login_page .push{
+	clear:both;
+}
+/*
+#login_page .footer, .push {
+	height:23px;
+}
+*/
+div[data-role="page"] .footer {
+/*#login_page .footer{*/
+	background:#ecf0f1; 
+	color:#1abc9c; 
+	font:bold 18px "Open Sans"; 
+	text-align:right; 
+	height:34px;
+    margin-bottom:0%;
+    bottom:0% !important;
+    position: absolute;
+    width:100%;
+}
+#login_page .ui-btn-corner-all {
+    color: #1ABC9C;
+    border-radius: 5px;
+    font-family: "Open Sans";
+    text-shadow: none;
+}
+div[data-role="page"] .footer p {
+/*#login_page .footer p {*/
+	margin:10px 0 !important;
+	/*float:right;*/
+    color:#1abc9c;
+    /*display:block;*/
+    /*clear: both;*/
+    text-align: right;
+    /*position: relative !important;*/
+    padding-right:48px;
+
+   text-transform: none;
+    text-shadow: 0 0 0px !important;
+}
+ #login_page .serviceMenu{
+	float:left;
+}
+
+.inputField{
+	margin-bottom:10px;
+	text-align:center;
+}
+
+.inputField input{
+	background:#2d3e50; 
+	border:1px solid #1abc9c; 
+	padding:5px; 
+	border-radius:2px; 
+	width:225px; 
+	color:#f2f2f2;
+}
+
+.cancelBtn{
+	display:block; 
+	padding:24px 15px 0; 
+	background:url(../img/LoginScreen/cancel.png) no-repeat 26px 0px; 
+	margin:5px 0 0 5px; 
+	float:left; 
+	color:#ffffff; 
+	font:normal 14px "Open Sans";
+}
+
+/*--- Login Screen ---*/
+.midBox{
+	width:500px; 
+	margin:0 auto;
+}
+
+.formRow{
+	margin:30px 0;
+    position: relative;
+}
+
+input#password{
+	border:1px solid #1abc9c; 
+	border-radius:5px; 
+	padding:2px; 
+
+}
+
+input#username{
+	border:1px solid #1abc9c; 
+	border-radius:5px; 
+	padding:2px;
+    display:block; 
+}
+
+.formRow label{
+	width:200px;
+	font:normal 18px "Open Sans"; 
+	display:block; 
+    text-transform: none;
+	float:left;
+    color: #000;
+    text-shadow: 0 0 1px #fff;
+    position: relative;
+    top: 16px;
+}
+.formRow input[type="text"]{ font-size:14pt !important;}
+
+.loginBtn, .logoutBtn{
+    width:150px;
+    padding:5px; 
+    color:#ffffff; 
+    text-align:center; 
+    display:block; 
+    float:left;
+    margin:10px 10px 10px 0; 
+    border:none; 
+    border-radius:5px;
+    height: 32px;
+    font-size: 22px;
+    font-family: "Open Sans";
+    text-shadow: none;
+}
+
+.loginBtn {
+	background:#1abc9c;
+}
+.loginBtn:active {
+	background-color: #0e9a7e;
+}
+.logoutBtn{
+	background:#34495e;
+    margin-left:38px;
+}
+
+.editServer {
+    display:block;
+    right: 0;
+    top: 15%;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    cursor:pointer;
+    z-index: 10000!important;
+    z-index: 1000!important;
+}
+.editServer[class^="icon-"]::before, .editServer[class*=" icon-"]::before {
+    width: 28px;
+    line-height: 28px;
+    color: #1ABC9C;
+    margin: 0px;
+    height: 28px;
+    border: 1px solid #1ABC9C;
+    border-radius: 28px;
+    font-size: 20px;
+}
+
+#login_page .sb-select{ padding: 10px 30px 10px 5px !important; width: 216px !important; font-size: 13pt !important; }
+input#username, input#password{ padding: 10px !important; width:225px !important; font-size:13pt !important;}
+#login_page select{ font-size: 16px !important;}
+
+
+.invalid_input {
+    border: 1px solid red;
+}
+#loginForm input.invalid_input {
+    border: 1px solid red;
+}
+
+
+/*cobra*/
+        .dropdown {
+            z-index: 9000;
+            z-index: 1000;
+            position: relative;
+            left: 40%;
+        }
+
+        .dropdown dd ul {
+            z-index: 65500;
+            z-index: 1100;
+            width: auto!important;
+        }
+        .desc { color:#6b6b6b;}
+        .desc a {color:#0092dd;}
+        
+        .dropdown dd, .dropdown dt, .dropdown ul { margin:0px; padding:0px; }
+        .dropdown dd { position:relative; }
+
+.ui-body-c .ui-link,
+.ui-bar-a a.ui-link:visited, 
+.ui-body-c .ui-link:visited {
+    color: #666;
+    font-weight: normal !important;
+}
+        .dropdown a,
+        .dropdown a:visited {
+            color:#666;
+            text-decoration:none; 
+            outline:none; 
+            text-shadow: none;
+        }
+        .dropdown a:hover { color:#5d4617;}
+        .dropdown dt a:hover, .dropdown dt a:focus { color:#5d4617; border: 1px solid #5d4617;}
+
+        .dropdown dt a {
+            background: #1abc9c url(../img/LoginScreen/select-arrow.png) no-repeat right center; 
+            display:block; 
+            padding-right:20px;
+            border:1px solid #d4ca9a; 
+            width:150px;
+        }
+.helpdesk_filter .dropdown dt a {
+    /*background: transparent url(images/left-arrow.png) no-repeat right center;*/
+    background: transparent;
+    border: none;
+}
+.helpdesk_filter dt a span {
+    color: #666;
+}
+
+         .dropdown dt a {
+            color: #fff!important;
+            font-weight: normal!important;
+            font-size: 18px;
+            text-shadow: 0 0 1px #fff;
+            width: 225px;
+        }
+         .helpdesk_display_options dt a {
+            width: 200px;
+        }
+
+    .dropdown dt a span {
+        cursor:pointer;
+        display: inline-block;
+        padding:5px 5px 0; 
+        width: 100%;
+        position: relative;
+        top: -16px;
+        color: #fff;
+    }
+    .dropdown dt a span.ddelement {
+        color: #666;
+    }
+        .dropdown dd ul { 
+        background:#eee none repeat scroll 0 0;
+        border:1px solid #ddd;
+        color:#C5C0B0; 
+        display:none;
+        left:0px; 
+        padding:5px 0px;
+        position:absolute;
+/*
+        width: 217px;
+        min-width:170px; 
+*/
+        list-style:none;
+
+        }
+        .dropdown span.value { display:none; width:500px!important; }
+.dropdown dd ul li a {
+    padding: 5px;
+    display: block;
+    width: 223px;
+}
+#ws_dropdown.dropdown dd ul li a {
+    padding: 15px 5px;
+}
+#ws_dropdown.dropdown dd ul li a {
+    width: 235px;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #login_page {
+        min-height: 748px !important;
+        height: 748px !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #login_page {
+        min-height: 1004px !important;
+        height: 1004px !important;
+    }
+}
+
+.dropdown dd ul li a {
+    color: #666; 
+    text-decoration: none; 
+    outline: none;
+    font-size: 18px;
+    text-shadow: 0 0 1px #fff;
+    font-weight: normal !important;
+}
+.dropdown dd ul li a:hover { background-color:#d0c9af;}
+
+.dropdown dd span {
+    display: none;
+}
+/*
+#helpdesk_categories dt a {
+    width: auto;
+}
+
+#helpdesk_categories dd ul {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 700px;
+}
+*/
+#login_page .ui-slider-switch a.ui-btn.ui-slider-handle {
+    background: #eee;
+    border: none;
+    width: 34px;
+    margin: 2px 0 0 -15px;
+}
+#login_page .ui-slider-handle .ui-btn-inner {
+    background: #1ABC9C;
+}
+div.ui-slider.ui-slider-switch.ui-btn-corner-all {
+    background: transparent;
+    border: 1px solid #ddd;
+}
+
+#login_page .ui-slider-label.ui-btn-corner-all {
+    background: #ddd;
+}
+
+div#home_page.ui-page.ui-body-c.ui-page-active.landscape {
+    height: 768px !important;
+}
+.save_password .ui-slider-switch,
+.offline_mode .ui-slider-switch{
+    width: 80px;
+    padding-right: 5px;
+}
+.offline_mode .ui-slider-switch span.ui-slider-label {
+    background: #ddd;
+}
+#popupEnableOfflineDialog {
+    width: 420px;
+}
+#popupEnableOfflineDialog .ui-header {
+    background: #1abc9c;
+}
+#login_page .ui-popup .ui-title {
+    margin-left: 2%;
+    margin-right: 2%;
+    text-shadow: none;
+}

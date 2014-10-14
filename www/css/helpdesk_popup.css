@@ -1,0 +1,267 @@
+/*W3C CSS Validated on 21 May 2014*/
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+
+/*--- CSS added for popup starts here ---*/
+
+/*.forwardHD_popupBox{position:absolute; width:90%; margin-left:50%; left:-45%;}*/
+.forwardHD_popupTitle{
+    background:#00a0e1;
+    text-align:center; 
+    color:#ffffff;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: normal;
+}
+/*
+.forwardHD_closePopup{display:block; width:33px; height:33px; background:url(images/closePopup.png) no-repeat 0 0; right:10px; top:8px; position:absolute; cursor:pointer;}*/
+.forwardHD_popupPadder{padding:15px; background:#ffffff;}
+.forwardHD_popupContent{color:#564d4d;
+    font-size: 18px;
+    font-weight: normal;
+}
+.forwardHD_popupCol1{width:100%;}
+.forwardHD_popupCol2{width:100%;}
+.forwardHD_popupSubject{margin-bottom:20px;}
+
+/*
+.forwardHD_popupInput_box label{width:47%; float:left;
+    font-size: 0.8em;
+    font-weight: normal;
+ padding:0 5px 0 0;}
+.forwardHD_popupInput_box label input{margin:0 5px 0 0;}
+*/
+.forwardHD_headerLink a{text-decoration:none; color:#564d4d;}
+.forwardHD_headerLink input{margin:0 5px 0 0;}
+/*.forwardHD_subLinks label{display:block;}*/
+/*--- CSS added for popup ends here ---*/
+}
+
+
+
+
+/* iPads (portrait) ----------- */
+@media only screen and (max-width : 768px) {
+
+/*--- CSS added for popup starts here ---*/
+
+/*.forwardHD_popupBox{position:absolute; width:80%; margin-left:50%; left:-40%; top: 10%;}*/
+.forwardHD_popupTitle{background:#00a0e1; text-align:center; color:#ffffff;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: normal;
+}
+/*
+.forwardHD_closePopup{display:block; width:33px; height:33px; background:url(images/closePopup.png) no-repeat 0 0; right:10px; top:8px; position:absolute;}*/
+.forwardHD_popupPadder{
+    padding: 0 15px 15px;
+    background:#ffffff;
+}
+.forwardHD_popupContent{color:#564d4d;
+    font-size: 18px;
+    font-weight: normal;
+}
+.forwardHD_popupCol1{width:40%;}
+.forwardHD_popupCol2{width:60%;}
+.forwardHD_popupSubject{margin-bottom:20px;}
+.forwardHD_headerLink a{text-decoration:none; color:#564d4d;}
+.forwardHD_headerLink input{margin:0 5px 0 0;}
+.forwardHD_subLinks label{display:block;}
+/*--- CSS added for popup ends here ---*/
+
+    .forwardHD_subjectTxt.hd_status {
+        width: 50%;
+    }
+    .forwardHD_popupInput_box, .forwardHD_contentHeading {
+        padding-top: 1em;
+    }
+    #status_after_forwarding {
+        width: 29%;
+    }
+}
+
+/*--- CSS added for popup starts here ---*/
+
+/*landscape*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.forwardHD_popupTitle{background:#00a0e1; text-align:center; color:#ffffff;
+		font-size: 20px;
+		line-height: 40px;
+		font-weight: normal;
+	}
+
+	.forwardHD_popupPadder{padding:15px; background:#ffffff;}
+	.forwardHD_popupContent{color:#564d4d;
+		font-size: 18px;
+		font-weight: normal;
+	}
+	.forwardHD_popupCol1{width:40%;}
+	.forwardHD_popupCol2{width:60%;}
+	.forwardHD_popupSubject{margin-bottom:20px;}
+
+
+	.forwardHD_headerLink a{text-decoration:none; color:#564d4d;}
+	.forwardHD_headerLink input{margin:0 5px 0 0;}
+    
+    .forwardHD_subjectTxt.hd_status {
+        width: 51%;
+    }
+    .forwardHD_popupInput_box, .forwardHD_contentHeading {
+        padding: 1em 0 0.5em;
+    }
+    #status_after_forwarding {
+        width: 30%;
+    }
+}
+
+
+/*--- CSS added for popup ends here ---*/
+
+.forwardHD_headerLink a.forwardHD_to {
+    position: relative;
+    color: #564d4d;
+    display: block;
+    float: left;
+    clear: left;
+    padding-right: 40px;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Open Sans';
+}
+
+#ForwardHelpdeskPopup {
+    display: none;
+    /*position: fixed;*/
+    position: absolute;
+    left: 1%;
+    top: 8%;
+    width: 98%;
+    border: 1px solid #ddd;
+    z-index: 1100;
+    background: #fff;
+}
+.hd_status {
+    float: left;
+}
+.forwardHD_subjectTxt.hd_status {
+	margin-left: 6.5%;
+    height: 30px;
+}
+.forwardHD_subjectTxt.forwardHD_mail_body {
+    margin-bottom: 2em;
+}
+
+
+.forwardHD_to::before, .forwardHD_to::before {
+    color: #564d4d;
+    position: absolute;
+    right: 0px;
+    font-size: 18px;
+}
+.ui-btn-text {
+	color: #564D4D;
+    font-weight: normal;
+}
+.forwardHD_subLinks {
+    display: none;
+    clear: both;
+    border: none;
+    background: none;
+    font-family: 'Open Sans';
+    color: #564d4d;
+    font-size: 1em;
+}
+.forwardHD_contentHeading {
+    font-weight: bold;
+    clear: both;
+}
+.forwardHD_contentHeading.hd_status {
+    padding-top: 0;
+    width: 42%;
+    margin-bottom: 1em;
+}
+.extra_mail_options {
+    clear: both;
+    margin-top: 1em;
+}
+.extra_mail_options .ui-checkbox .ui-icon {
+	left: 0;
+}
+.extra_mail_options .ui-checkbox .ui-btn-inner {
+	padding-left: 32px;
+}
+#ForwardHelpdeskPopup .helpdeskI3D {
+    display: none;
+}
+.email_customer_container > div {
+    display: inline-block;
+
+}
+.email_customer_container .ui-checkbox {
+    width: 48.3%;
+}
+.email_customer_container .ui-input-text {
+    width: 49.2%;
+}
+.forwardHD_popupInput_box {
+    clear: both;
+}
+.forwardHD_popupInput_box label {
+    margin: 0;
+}
+.forwardHD_popupInput_box .ui-checkbox .ui-btn-inner {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 25px;
+}
+.forwardHD_popupInput_box .ui-checkbox {
+    display: inline-block;
+    width: 48%;
+}
+#ForwardHelpdeskPopup .ui-shadow-inset {
+    box-shadow: none;
+}
+
+#ForwardHelpdeskPopup .ui-checkbox .ui-icon {
+    left: 0;
+    background-image: none;
+}
+#ForwardHelpdeskPopup .ui-checkbox label {
+	background: transparent;
+    margin: 0;
+}
+#ForwardHelpdeskPopup .ui-checkbox input[type="checkbox"] {
+    left: 2px;
+    top: 45%;
+}
+#ForwardHelpdeskPopup .ui-icon.ui-icon-checkbox-off {
+	background-color: #D4D4D4;
+}
+#newHelpdeskStateI3D {
+    height: 30px;
+    width: 98%;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+#newHelpdeskStateI3D[class*=" icon-"]::before {
+    right: 10px;
+}
+input.forwardHD_mail_subject,
+input.CustomerMail,
+textarea.forwardHD_mail_body {
+    color: #564D4D;
+    font-family: 'Open Sans';
+}
+
+.forwardHD_subjectTxt .ui-input-text {
+    display: none;
+}
+.page_with_popup {
+	height: 80% !important;
+}

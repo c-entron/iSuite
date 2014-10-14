@@ -1,0 +1,281 @@
+/*W3C CSS Validated on 21 May 2014*/
+
+@media only screen and (max-width: 768px) {
+    .stopwatch-popup {
+        width: 80%;
+        min-width: 590px;
+        height: 90%;
+        left: 1%;
+    }
+    .stopwatch-container {
+        height: 90%;
+    }
+    #popupDeleteStopwatch {
+        width: 50%;
+        left: 15%;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .stopwatch-popup {
+        width: 596px;
+        height: 88%;
+        left: 0.5%;
+    }
+    .stopwatch-container {
+        height: 88%;
+    }
+    #popupDeleteStopwatch {
+        width: 35%;
+        left: 10%;
+    }
+}
+#stopwatch_in_home_page-popup,
+#stopwatch_in_timer_page-popup {
+    left: 10px !important;
+    top: 30px !important;
+}
+.stopwatch-popup {
+    padding: 2%;
+    position: absolute;
+    border: 1px solid #514897;
+    border-right: 6px solid #514897;
+    background: #fff;
+    z-index: 10002;
+    top: 4%;
+    display: none;
+}
+.stopwatch-container {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.stopwatch-popup .pageTitle {
+    position: relative;
+}
+.stopwatch-separator {
+    position: relative;
+}
+.stopwatch-separator[class^="icon-"]::before,
+.stopwatch-separator[class*=" icon-"]::before {
+    width: 24px;
+    line-height: 30px;
+    margin-left: .2em;
+    color: #000;
+    font-size: 30px;
+    margin-left: 0px;
+    position: absolute;
+    left: 0px;
+    color: #514897;
+}
+
+.stopwatch {
+    padding: 2%;
+    border-bottom: 1px solid #aaa;
+}
+.stopwatch:last-child {
+    border: none;
+}
+.stopwatch-duration {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    margin-right: 5%;
+}
+.stopwatch-duration input {
+    font-size: 40px;
+    text-align: center;
+}
+.stopwatch-action {
+    width: 30%;
+    display: inline-block;
+}
+.stopwatch-action label {
+    font-size: 40px;
+    height: 50px;
+    line-height: 42px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.stopwatch-action a {
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+    text-decoration: none !important;
+}
+.stopwatch-action a[name="stopwatch-start"] span.ui-btn-inner {
+    border: 1px solid  #514897;
+}
+.stopwatch-action a[name="stopwatch-start"] span.ui-btn-inner .ui-btn-text {
+    color: #514897;
+}
+
+.stopwatch-action .ui-btn-inner {
+    padding: 0;
+}
+.stopwatch-action .ui-btn-text {
+	line-height: 50px;
+	font-size: 14px;
+}
+textarea[name="stopwatch-note"],
+textarea[name="stopwatch-internal-note"] {
+    width: 84%;
+    height: 30%;
+    display: inline-block;
+}
+textarea[name="stopwatch-internal-note"] {
+    display: inline-block;
+}
+.stopwatch-data {
+    width: 15%;
+    display: inline-block;
+    vertical-align: top;
+}
+.stopwatch-data a,
+a[name="stopwatch-new"] {
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-decoration: none !important;
+    text-indent: -9999em;
+    margin: 10px 0 0 10px;
+    position: relative;
+}
+.stopwatch-data a[class^="icon-"]::before, 
+.stopwatch-data a[class*=" icon-"]::before,
+a[name="stopwatch-new"][class^="icon-"]::before,
+a[name="stopwatch-new"][class*=" icon-"]::before {
+    width: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    margin: 0 0 0 0;
+    position: absolute;
+    height: 40px;
+    text-indent: 0;
+    left: 0;
+    border: 1px solid;
+    border-radius: 40px;
+}
+[name="stopwatch-transfer"][class^="icon-"]::before,
+[name="stopwatch-transfer"][class*=" icon-"]::before {
+    color: #9ec900;
+    border-color: #9ec900;
+}
+#stopwatch_in_home_page [name="stopwatch-transfer"][class^="icon-"]::before,
+#stopwatch_in_home_page [name="stopwatch-transfer"][class*=" icon-"]::before {
+    color: #666;
+    border-color: #666;
+}
+[name="stopwatch-transfer"].active-transfer-stopwatch[class^="icon-"]::before,
+[name="stopwatch-transfer"].active-transfer-stopwatch[class*=" icon-"]::before {
+    color: #fff;
+    background-color: #9ec900;
+}
+
+[name="stopwatch-delete"][class^="icon-"]::before,
+[name="stopwatch-delete"][class*=" icon-"]::before {
+    color: #666;
+    border-color: #666;
+}
+[name="stopwatch-delete"].active-delete-stopwatch[class^="icon-"]::before,
+[name="stopwatch-delete"].active-delete-stopwatch[class*=" icon-"]::before {
+    color: #fff;
+    background: #666;
+}
+.half-circle-left {
+    height: 90px;
+    width: 45px;
+    border-radius: 90px 0 0 90px;
+    background: #514897;
+}
+.half-circle-right {
+	height: 90px;
+	width: 45px;
+	border-radius: 0 90px 90px 0 ;
+	background: #514897;
+}
+.close-stopwatch {
+    position: absolute;
+    left: 93.5%;
+    top: 45%;
+}
+#helpdesk_timers_page .open-stopwatch {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    z-index: 10000;
+    display: none;
+}
+#helpdesk_timers_page .open-stopwatch-bar {
+    background-color: #514897;
+    width: 6px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 500;
+    top: 0;
+    display: none;
+}
+label[for="stopwatch-note"],
+label[for="stopwatch-internal-note"] {
+    display: block;
+}
+#popupDeleteStopwatch,
+#popupOverwriteTimerDescNote {
+    position: fixed;
+    top: 40%;
+    display: none;
+    z-index: 11000;
+}
+#popupDeleteStopwatchOverlay {
+    z-index: 11000;
+}
+#popupDeleteStopwatch div[data-role="header"],
+#popupOverwriteTimerDescNote div[data-role="header"] {
+    background: #514897;
+}
+#popupDeleteStopwatch .ui-content,
+#popupOverwriteTimerDescNote .ui-content {
+    padding: 15px;
+}
+#popupDeleteStopwatch h1.ui-title,
+#popupOverwriteTimerDescNote h1.ui-title {
+    margin: 0.6em auto 0.8em;
+}
+#popupDeleteStopwatch h3.ui-title,
+#popupOverwriteTimerDescNote h3.ui-title {
+    margin: 0.5em 0;
+}
+.popup_overlay.stopwatch-popup-overlay {
+    z-index: 10001;
+}
+#popupOverwriteTimerDescNoteOverlay {
+    z-index: 10999;
+}
+.remove_stopwatch_no,
+.overwrite_timer_no {
+	background: #D9EDF7;
+	border: 1px solid #BCE8F1;
+}
+.remove_stopwatch_no .ui-btn-text,
+.overwrite_timer_no .ui-btn-text {
+	color: #3A87AD;
+	text-shadow: none;
+}
+.remove_stopwatch_yes,
+.overwrite_timer_yes {
+	background: #F2DEDE;
+	border: 1px solid #EED3D7;
+}
+.remove_stopwatch_yes .ui-btn-text,
+.overwrite_timer_yes .ui-btn-text {
+	color: #B94A48;
+	text-shadow: none;
+}
+#popupOverwriteTimerDescNote {
+    left: 20%;
+}
+#popupOverwriteTimerDescNote .ui-header {
+    padding: 0 20px;
+}
+#popupOverwriteTimerDescNote, #popupOverwriteTimerDescNoteOverlay {
+    display: none;
+}

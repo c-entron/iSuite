@@ -1,0 +1,84 @@
+/*W3C CSS Validated on 21 May 2014*/
+
+@media only screen and (max-width: 768px) {
+    #hotline_page {
+        height: 955px !important;
+        min-height: 955px !important;
+    }
+    #hotline_details_page {
+        min-height: 890px !important;
+        height: auto;
+        margin-top: 52px;
+        margin-bottom: 0;
+        padding: 0 !important;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #hotline_page {
+        min-height: 699px !important;
+        height: 699px !important;
+    }
+    #hotline_details_page {
+        min-height: 600px !important;
+        height: auto;
+    }
+}
+#hotline_page .header,
+#hotline_details_page .header{
+    background-color: #1A4A8D;
+    display: block !important;
+}
+#hotline_details_data {
+    margin-bottom: 5em;
+}
+#hotline_details_data .ui-collapsible-heading {
+    border-radius: 5px;
+}
+#hotline_details_data .ui-collapsible-heading a {
+    background: #1A4A8D;
+}
+#hotline_details_data .ui-collapsible-heading .ui-btn-text {
+    color: #fff;
+}
+#hotline_details_data .ui-btn {
+    margin-left: 0;
+}
+#hotline_page .ui-input-text.ui-corner-all,
+.hotline .ui-input-text.ui-corner-all {
+    -webkit-box-shadow: none;
+    border: 1px solid #afafaf;
+}
+#hotline_details_page .hotline {
+    margin-bottom: 60px;
+}
+.ui-icon-plus::before {
+    content: '\2b';
+}
+.ui-icon-minus::before {
+    content: '\2d';
+}
+#hotline_details_page .centron_icon [class*=" ui-icon-"]::before {
+    left: 4px;
+    top: 4px;
+    font-size: 16px;
+    font-weight: normal;
+}
+#hotline_details_page .hotline .ui-btn {
+    display: none;
+    margin-top: 1em;
+}
+#details_to_home {
+    background:url(../img/LoginScreen/close.png) no-repeat 0 0;
+}
+
+#hotline_details_page textarea.ui-input-text {
+    height : 150px;
+
+    -webkit-transition : height 200ms linear;
+       -moz-transition : height 200ms linear;
+         -o-transition : height 200ms linear;
+            transition : height 200ms linear;
+}
+.offline-mode .hotline label {
+    color: #fff;
+}

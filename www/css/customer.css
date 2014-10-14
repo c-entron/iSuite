@@ -1,0 +1,144 @@
+/*W3C CSS Validated on 21 May 2014*/
+
+@media only screen and (max-width: 768px) {
+    #customer_page {
+        height: 955px !important;
+        min-height: 955px !important;
+    }
+    #customer_page div.ui-content {
+        height: 97%;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #customer_page {
+        min-height: 699px !important;
+        height: 699px !important;
+    }
+    #customer_page div.ui-content {
+        height: 95%;
+    }
+}
+
+#sorter .ui-li.ui-li-static.ui-btn-up-c {
+    height: 3.8%;
+    padding: 0;
+    font-size: 8px;
+    padding-left: 5px;
+    line-height: 1.8em;
+}
+#customer_list {
+    margin: 0px;
+    padding: 0 10px;
+}
+.searchLable {
+    margin: 0.5em 0;
+}
+.offline-mode .searchLable {
+    color: #fff;
+}
+#sorter{
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 20px;
+    z-index: 1;
+}
+#sorter ul{
+    height: 100%;
+}
+#sortedList{
+    padding-right: 35px;
+}
+#customer_page [data-role="header"] {
+    background: #6EA223;/*yellow green*/
+    color: #fff;
+}
+.wrap {
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+.wrap label, .wrap .ui-input-text, .wrap .ui-input-text+span {
+    display: block;
+    float: left;
+}
+.wrap label {
+    line-height: 3em;
+    text-transform: uppercase;
+    width: 12%;
+}
+.wrap .ui-input-text {
+    width: 80%;
+}
+
+
+/*landscape*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.customer_button_container .customer_new_helpdesk,
+	.customer_button_container .new_crm,
+	.customer_button_container .download,
+	.customer_button_container .sales {
+		margin-right: 6%;
+	}
+}
+
+
+.wrap .ui-input-text+span {
+    margin-top: 1.4em;
+    margin-left: 5px;
+}
+
+
+.ui-li-static.ui-li {
+    padding: 0;
+    border: none;
+}
+
+.ui-li-divider {
+    background: white;
+    border: none;
+}
+
+.ui-li-heading {
+    background-color: #999;
+    color: #fff;
+    line-height: 20px;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    border-radius: 2px;
+}
+
+.ui-li-desc {
+    padding: 10px;
+}
+.selected{
+    background: #6EA223;
+}
+.icon-search_h[class^="icon-"]::before, .icon-search_h[class*=" icon-"]::before {
+    width: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    margin-left: 0px;
+    border: 1px solid #aaa;
+    border-radius: 24px;
+    height: 30px;
+    position: relative;
+    top: -8px;
+    color: #bbb;
+}
+.ui-collapsible-heading, .ui-collapsible-heading>.ui-btn {
+
+    background: gray;
+    color: white;
+
+    margin:10px 0;
+}
+#customer_page .ui-input-text.ui-corner-all {
+    -webkit-box-shadow: none;
+    border: 1px solid #afafaf;
+}
+#popupDeleteFavDialog .ui-header .ui-title {
+	margin: .6em 2% .8em;
+}
+#customer_list .ui-li-divider {
+    border-radius: 5px 5px 0 0;
+}

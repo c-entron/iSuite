@@ -1,0 +1,49 @@
+/*W3C CSS Validated on 21 May 2014*/
+
+/* Put your custom CSS here */
+.ui-btn-corner-all {-webkit-border-radius: 5px;border-radius: 5px;}
+.ui-btn-down-c {
+    border:none;
+    background: #b8002d; 
+    background: #c8c8c8;
+    color:#fff; 
+    text-shadow:none;
+}
+.ui-btn-up-c {border:none;background: #fff;}
+.ui-focus, .ui-btn:focus{-webkit-box-shadow:none; box-shadow:none;}
+.ui-btn-active {
+    border:none;
+    background: #c8c8c8; 
+    background: #b8002d;
+    color:#fff; 
+    text-shadow:none;
+}
+.ui-btn-down-c:visited, .ui-btn-down-c:hover, .ui-btn-down-c a.ui-link-inherit{color:#fff;}
+/*.ui-btn-hover-c {border:none;background: #fff;}*/
+.ui-slider-switch .ui-btn.ui-slider-handle {margin: 2px 0 0 -14px;}
+
+
+.ui-slider-switch .ui-btn.ui-slider-handle {
+    margin-top: 3px;
+}
+.save_password .ui-btn.ui-slider-handle {
+    margin-top: 2px;
+}
+
+
+div.ui-slider-switch{ height:37px;}
+.ui-field-contain div.ui-slider-switch{ width:80px;}
+.ui-slider-switch .ui-btn.ui-slider-handle{width:28px;  height:33px; -webkit-box-shadow:none; box-shadow:none;}
+
+
+.ui-slider-switch .ui-btn.ui-slider-handle {
+    width: 30px;
+}
+
+
+.ui-slider-switch .ui-slider-label-b{line-height:37px;}
+.ui-slider-switch .ui-slider-label-a{line-height:37px;}
+
+.row .ui-btn-inner{background: #b8002d; color:#fff;-webkit-box-shadow:none; box-shadow:none;  }
+.row .ui-btn-inner .ui-btn-text{ font-size: 28px;font-weight: normal;line-height: 12px;padding: 0 0 6px 0;display: inherit;}
+.row .ui-btn-inner{ min-width:inherit; width:20px!important; padding:10px;  }

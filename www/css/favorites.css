@@ -1,0 +1,88 @@
+/*W3C CSS Validated on 21 May 2014*/
+
+@media only screen and (max-width: 768px) {
+    #favorites_page {
+        height: 955px !important;
+        min-height: 955px !important;
+    }
+    #fav_details_page {
+        height: 896px !important;
+        min-height: 896px !important;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #favorites_page {
+        min-height: 699px !important;
+        height: 699px !important;
+    }
+    #fav_details_page {
+        min-height: 634px !important;
+        height: 634px !important;
+    }
+}
+#favorites_page [data-role="header"],
+#fav_details_page [data-role="header"],
+#fav_details_page [data-role="header"] h1 {
+    background: #FFB400;
+	background-color: #FFB400;
+    text-shadow: none;
+}
+#favorites_list {
+    margin: 20px auto 0;
+    width:100%;
+}
+#favorites_list .ui-li-heading.selected_fav {
+    background-color: #FFB400;
+    color: #fff;
+}
+.selected_fav .fav_customer_symbol[class^="icon-"]::before, .selected_fav .fav_customer_symbol[class*=" icon-"]::before {
+    color: #fff;
+}
+#favorites_list li.customerName {
+    margin:10px 0px;
+    border :1px solid #ddd;
+    border-radius: 5px;
+}
+#selected_fav_headline {
+    margin-bottom: 2em;
+}
+#selected_fav_headline.selected_customer {
+    color: #FFB400;
+}
+#fav_details_page .customer_details_address ul.selected_address {
+    color: #FFB400;
+}
+#fav_details_page [data-role="footer"] {
+    background-color: transparent;
+    background: transparent;
+}
+#fav_details_page .sales_information .sales_info_header {
+    background: #FFB400;
+}
+#popupDeleteFavDlg .ui-header .ui-title {
+    margin: .6em 2% .8em;
+}
+#fav_details_close,
+#customer_details_close {
+    display: block;
+    float: right;
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+    position: relative;
+}
+#fav_details_close[class^="icon-"]::before, #fav_details_close[class*=" icon-"]::before,
+#customer_details_close[class^="icon-"]::before, #customer_details_close[class*=" icon-"]::before {
+    line-height: 24px;
+    color: #fff;
+    margin-left: 0px;
+    position: absolute;
+    left: 0;
+    border: 2px solid #fff;
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+}
+#favorites_list .ui-li-divider {
+    border-radius: 5px 5px 0 0;
+}

@@ -1,0 +1,297 @@
+/*W3C CSS Validated on 21 May 2014*/
+
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    #serial_number_page {
+        min-height: 698px !important;
+        max-height: 698px !important;
+        height: 698px !important;
+    }
+
+    .barcode_main_container .barcode_header .barcode_column1, .barcode_main_container .barcode_header .barcode_column3 {
+    width:25%;
+    }
+    .barcode_main_container .barcode_header .barcode_column2 {
+    width:50%;
+    text-align:center;
+    font-family:calibri;
+    color:#ffffff;
+    font-size:25px;
+    }
+    .barcode_main_container .barcode_header .barcode_column1 a {
+    display:block;
+    width:33px;
+    height:33px;
+    background:url(../images/left-top-arrow.png) no-repeat 0 0;
+    }
+    .barcode_main_container .barcode_header .barcode_column3 a {
+    display:block;
+    width:33px;
+    height:33px;
+    background:url(../images/barcode-top-toggle-icon.png) no-repeat 0 0;
+    float:right;
+    }
+    .barcode_serial_search_container {
+    margin:25px 20px;
+    }
+    .barcode_serial_search_container .col1 {
+    width:20%;
+    font-size:23px;
+    color:#646464;
+    }
+    .barcode_serial_search_container .col2 {
+    width:25%;
+    }
+    .barcode_serial_search_container .col3 {
+    width:20%;
+    }
+    .barcode_serial_search_container .padder {
+    padding:15px;
+    }
+    .barcode_serial_search_container .col1 .padder {
+    padding-top:20px;
+    }
+    .barcode_serial_search_container .col2 input {
+    border-radius:5px;
+    border:solid 1px #646464;
+    font-size:18px;
+    padding:5px;
+    }
+    .barcode_serial_search_container .col3 img {
+    margin-right:20px;
+    }
+    .barcode-label {
+    font-size:20px;
+    font-weight:bold;
+    padding: 0 15px 15px;
+    }
+
+    .barcode_table th,
+    .barcode_table td {
+        padding:10px;
+    }
+
+    .barcode_table td:last-child {
+    border-radius: 0 5px 5px 0;
+    }
+    .barcode_table th:first-child {
+    border-radius: 5px 0 0 5px;
+    }
+
+    .info_row { margin-bottom:20px;}
+    .info_row .label_block{ width:25%; float: left}
+    .info_row .value_block{ width:21%; margin-left:4%; float:left;}
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (max-width: 768px) {
+
+    #serial_number_page {
+        min-height: 955px !important;
+        max-height: 955px !important;
+        height: 955px !important;
+    }
+
+    .barcode_main_container .barcode_header .barcode_column1, .barcode_main_container .barcode_header .barcode_column3 {
+    width:25%;
+    }
+    .barcode_main_container .barcode_header .barcode_column2 {
+    width:50%;
+    text-align:center;
+    font-family:calibri;
+    color:#ffffff;
+    font-size:25px;
+    }
+    .barcode_main_container .barcode_header .barcode_column1 a {
+    display:block;
+    width:33px;
+    height:33px;
+    background:url(../images/left-top-arrow.png) no-repeat 0 0;
+    }
+    .barcode_main_container .barcode_header .barcode_column3 a {
+    display:block;
+    width:33px;
+    height:33px;
+    background:url(../images/barcode-top-toggle-icon.png) no-repeat 0 0;
+    float:right;
+    }
+    .barcode_serial_search_container {
+    margin:25px 20px;
+    }
+    .barcode_serial_search_container .col1 {
+    width:20%;
+    font-size:23px;
+    color:#646464;
+    }
+    .barcode_serial_search_container .col2 {
+    width:25%;
+    }
+    .barcode_serial_search_container .col3 {
+    width:20%;
+    }
+    .barcode_serial_search_container .padder {
+    padding:15px;
+    }
+    .barcode_serial_search_container .col1 .padder {
+    padding-top:20px;
+    }
+    .barcode_serial_search_container .col2 input {
+        border-radius: 5px;
+        border:solid 1px #646464;
+        font-size:18px;
+        padding:5px;
+    }
+    .barcode_serial_search_container .col3 img {
+        margin-right:20px;
+    }
+    .barcode-label {
+        font-size:20px;
+        font-weight:bold;
+        padding: 15px 15px;
+    }
+    .barcode_table th {
+        padding:10px;
+    }
+
+    .barcode_table td:last-child {
+    border-radius: 0 5px 5px 0;
+    }
+    .barcode_table th:first-child {
+    border-radius: 5px 0 0 5px;
+    }
+
+    .info_row { margin-bottom:20px;}
+    .info_row .label_block{ width: 25%; float: left}
+    .info_row .value_block{ width: 21%; margin-left:4%; float:left;}
+
+}
+
+.barcode_table tr.selected_barcode {
+    background-color: #FF3729 !important;
+}
+.barcode_table tr.selected_barcode td {
+    color:#fff !important;
+}
+.grey_pop_up_container{ 
+    background-color: #e8e8e8;
+    position: fixed; 
+    width:100%; 
+    font-size:18px; 
+    color:#4d4d4d; 
+    bottom: 0px;
+    display: none;
+    z-index: 1000;
+}
+.barcode_main_container {
+    display: none;
+    padding: 0 1%;
+}
+.barcode_main_container .barcode_header {
+    background-color: #e62018;
+    padding:20px;
+}
+
+.barcode_table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.barcode_table th:last-child {
+border-radius:0 5px 5px 0;
+}
+.barcode_table td {
+    text-align: left;
+    padding:10px;
+    color:#4d4d4d;
+    font-size:18px;
+}
+.barcode_table td:first-child {
+    border-radius: 5px 0 0 5px;
+}
+.barcode_table tr:nth-child(2n) {
+    background-color:#d1d1d1;
+}
+.barcode_table tr:nth-child(2n) td:first-child {
+    border-radius: 5px 0 0 5px;
+}
+.barcode_table tr:nth-child(2n) td:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+#serial_number_page .header{
+    background-color: #FF3729;
+}
+
+ .ui-input-text-label{
+     margin: 0.5em 0;
+ }
+
+ #icon_camera[class^="icon-"]::before, #icon_camera[class*=" icon-"]::before {
+     width: 30px;
+     line-height: 30px;
+     font-size: 20px;
+     margin-left: 10px;
+     border: 1px solid #aaa;
+     border-radius: 30px;
+     height: 30px;
+     position: relative;
+     top: -6px;
+     color: #bbb;
+ }
+
+ #icon_search[class^="icon-"]::before, #icon_search[class*=" icon-"]::before {
+     width: 30px;
+     line-height: 30px;
+     font-size: 20px;
+     margin-left: 0px;
+     border: 1px solid #aaa;
+     border-radius: 30px;
+     height: 30px;
+     position: relative;
+     top: 10px;
+     color: #bbb;
+ }
+
+ #icon_trash[class^="icon-"]::before, #icon_trash[class*=" icon-"]::before {
+     width: 30px;
+     line-height: 30px;
+     font-size: 24px;
+     margin-left: 0px;
+     border: 1px solid #aaa;
+     border-radius: 24px;
+     height: 30px;
+     position: relative;
+     top: 10px;
+     color: #bbb;
+ }
+#serial_number_page .ui-input-text-label.ui-input-text{
+    width: 20% !important;
+}
+
+ #serial_number_page .ui-input-text {
+     width: 50%;
+ }
+  #serial_number_page input.ui-input-text {
+     width: 100%;
+ }
+
+.barcode_table th {
+    text-align: left;
+    color:#fff;
+    font-size: 16px;
+    background-color:#646464;
+}
+.info_row.sn-desc-row .value_block {
+    width: 71%;
+}
+.grey_pop_up_container .header_style { padding:20px 20px 0 0; color:#736464; font-weight:bold; clear: both; margin-bottom: 1em;}
+
+.sn-number,
+.sn-article-code,
+.sn-order,
+.sn-delivery-note,
+.sn-invoice {
+	width: 20%;
+}

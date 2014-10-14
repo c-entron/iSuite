@@ -1,0 +1,1254 @@
+/*W3C CSS Validated on 21 May 2014*/
+
+/* Resetting the default browser values */
+*{ margin:0px; padding:0px;}
+.fl{ float:left;} .fr{ float:right;} .cb{ clear:both;}
+/*
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('font/segoeuil.eot');
+	src: url('font/segoeuil.eot?#iefix') format('embedded-opentype'),
+	     url('font/segoeuil.woff') format('woff'),
+	     url('font/segoeuil.ttf')  format('truetype'),
+	     url('font/segoeuil.svg#svgFontName') format('svg');
+}*/
+
+/* header */
+.header_container .col1, .header_container .col3{ width:10%;}
+.header_container .col2 { width:80%}
+#wrapper{width:100%;}
+.header{
+    padding:10px; 
+    color:#ffffff; 
+    text-align:center; 
+    background: #00a0e1; 
+    font-family: "Open Sans";
+    text-shadow: none;
+    font-size: 20px;
+    font-weight: normal;
+}
+#login_page .header,
+#webservice_page .header {
+    background: #1ABC9C;/*green*/
+}
+#home_page .header{
+    background: #EF9C00;/*orange*/
+}
+#helpdesk_page .header,
+#helpdesk_timers_page .header {
+    background: #00A0E1;/*blue*/
+}
+
+.padder{padding:15px 20px;}
+.title {
+    padding:10px;
+    font-size:16px; 
+    color:#646464; 
+    font-family: "Open Sans";
+}
+
+.title span {font-size:12px; margin:0 20px;}
+
+.offline-mode .title,
+.offline-mode .buttons_user_date_time_container .button a,
+.offline-mode #language_select-button .ui-btn-inner .ui-btn-text span,
+.offline-mode .contact_container .content,
+.offline-mode #wheel_selected_customer_name  {
+    color: #fff;
+    text-shadow: none;
+}
+.offline-mode .title_container {
+    color:#fff;
+}
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+    html, body {  height: 100%;}
+    .contact_container, .title_container{ /*width:94%;*/ width: 50%; float:left; }
+    .contact_container .content{
+    float:left;
+}
+    .contact_container .arrow{ float:left; width:15%; text-align:center;}
+    .contact_container{font-family: "Open Sans"; font-size:12px; font-style: normal; color:#000000; padding:10px 0; /*margin-left:15px;*/ width: 40%;}
+    .title_container{ font-family: "Open Sans"; font-size:23px; font-style: normal; color:#666666; padding:10px 0;}
+    .info_container{ width:94%; float:left; margin-top:15px; border: solid 1px #e0e0e0; -webkit-border-radius:5px; margin-left:15px; }
+    .info_container .col1{ width:30%; float:left; font-family: "Open Sans"; font-size:12px; font-style: normal; color:#ffffff; border-radius: 5px 0px 0px 5px; background-color:#646464; min-height:120px; word-break: break-all;}
+    .info_container .col2{ width:70%; float:left; font-family: "Open Sans"; font-size:12px; font-style: normal; color:#000000; min-height:120px;}
+    .info_container .col1 .padder, .info_container .col2 .padder{ padding:10px;}
+    .header_float_clear{ clear:both;}
+    .info_container .col1 .date{ margin-bottom:10px;}
+
+    #main_wrapper { min-height: 100%;/*margin-bottom: -50px;*/}
+    #main_wrapper:after {content: ""; display: block;}
+    #footer, #main_wrapper:after {height: 50px; }
+    #footer { background-color:#fff;}
+
+    .buttons_user_date_time_container .button {
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 38px;
+    line-height: 16px;
+    width: 150px;
+    }
+    .buttons_user_date_time_container .button a {
+        display: block;
+        padding: 10px 10px 10px 45px;
+        font-family: "Open Sans";
+        color: #666;
+        text-decoration: none;
+        min-width: 100px;
+        font-size: 14px;
+        font-weight: normal;
+    }
+    #settings_page .buttons_user_date_time_container [class^="icon-"]::before, 
+    #settings_page .buttons_user_date_time_container [class*=" icon-"]::before {
+        color: #fff;
+        margin: 0;
+        position: relative;
+        top: 10px;
+        line-height: 0;
+    }
+        
+    #settings_page .buttons_user_date_time_container .button a {
+        color: #fff;
+        font-weight: normal;
+        padding: 0px 10px 0px 24%;
+    }
+
+
+
+
+    .arrow{ font-size:40px; line-height:15px;}
+    
+    .action_button_container {
+        padding: 6px 0 2px 28px;
+        background: #f9f9f9;
+    }
+    .footer.ui-footer {
+        border: none;
+    }
+
+    .action_button_container .button a {
+        text-decoration: none;
+        font-weight: normal;
+        color: #666;
+        font-family: 'Open Sans';
+        font-size: 14px;
+    }
+    .action_button_container .button span {
+        text-decoration: none;
+        font-weight: normal;
+        color: #666;
+        font-family: 'Open Sans';
+        font-size: 14px;
+    }
+    
+
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    html, body {  height: 100%;}
+    .contact_container, .title_container{ width:358px; float:left; }
+    .contact_container .content {
+        float:left;
+    }
+   /* .contact_container .arrow{ float:left; width:15%; text-align:center;}*/
+    .contact_container .arrow.left {
+        float: left;
+        width: 15%;
+        width: 40px;
+        text-align: center;
+        background: url(images/left-arrow.png) 50% 50% no-repeat;
+        height: 23px;
+    }
+    .contact_container .arrow.down {
+        float: left;
+        width: 15%;
+        width: 40px;
+        text-align: center;
+        background: url(images/down-arrow.png) 50% 50% no-repeat;
+        height: 23px;
+    }
+    .contact_container {
+        font-family: "Open Sans";
+        font-size: 12px;
+        font-style: normal;
+        color: #000000;
+        padding: 10px 10px;
+        margin-left: 15px;
+        line-height: 23px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-right: 10px;
+        width: 300px;
+    }
+    .title_container {
+        font-family: "Open Sans";
+        font-size:26px; 
+        font-style: normal; 
+        color:#666666; 
+        padding:10px 0; 
+    }
+    .info_container{ width:358px; float:left; margin-top:15px; border: solid 1px #e0e0e0; -webkit-border-radius:5px; margin-left:15px; }
+    /*!important*/
+    .info_container.helpdesk_ticket {
+        float: none;
+        margin: 20px auto;
+        width: 90%;
+    }
+    .info_container .col1{ width: 36%; float:left; font-family: "Open Sans"; font-size:16px; font-style: normal; color:#ffffff; border-radius: 5px 0px 0px 5px; background-color:#646464; min-height:120px; word-break: break-all;}
+    .info_container .col2{ width: 64%; float:left; font-family: "Open Sans"; font-size:12px; font-style: normal; color:#000000; min-height:120px;}
+    .info_container .col1 .padder, .info_container .col2 .padder{ padding:10px;}
+    .header_float_clear{ clear:both;}
+    .info_container .col1 .date{ margin-bottom:10px;}
+    #main_wrapper { min-height: 100%;margin-bottom: -50px; }
+    #main_wrapper:after {content: ""; display: block;}
+    #footer, #main_wrapper:after {height: 50px; }
+    #footer { background-color:#fff;}
+    .arrow{ font-size:40px; line-height:15px;}
+
+    .btnsContainer{    margin-top: 150px; }
+    .btnsContainer button{margin:0 40px 0 0; height:76px; width: 24%; padding:20px 0px 20px 70px; border:none; display:block; color:#ffffff; font-size:16px; text-align:left; cursor:pointer; float:left;font-family: "Open Sans";}
+
+
+    .btnsContainer button {
+        margin: 0 1.4% 0 0;
+    }
+    .btnsContainer button:last-of-type {
+        margin: 0;
+    }
+
+    .green_arrow_button_area{ float:right;}
+    .green_arrow_button_area a{ display:block; width:137px; height:136px; background:url(images/arrow-green.png) no-repeat 0 0;}
+    .green_arrow_button_area a:hover{ background:url(images/arrow-green-active.png) no-repeat 0 0;}
+    .dialer_area{  width:550px; float:left;}
+    .clear{ clear:both;}
+
+    .settings_container{ width:100%;}
+    .settings_container .header { background-color:#b8002d; padding:15px;}
+    .settings_container .header .column1, .settings_container .header .column3{ width:25%; float:left;} 
+    .settings_container .header .column2{ float:left; width:50%; text-align:center; font-family: Calibri; font-size:25px; color:#fff;}
+    .settings_container .header .column1 a{ background:url(images/left-top-arrow.png) no-repeat 0 0; width:33px; height:32px; display:block;}
+    .settings_content_container{ margin: 0px auto 50px; width:80%; border:solid 1px #b8002d; border-radius:5px;}
+    .settings_content_container .blocks .header{ background-color:#b8002d; padding:10px; font-family: "Open Sans"; color:#fff; font-size:20px; text-align: left;}
+
+    .settings_content_container .button_container button{ font-size:20px; color:#fff; background-color:#b8002d; border:none; width:25px; height:25px; text-align:center; float:left; }
+    .settings_content_container .button_container{ width:500px; margin:0 auto; text-align:center; padding-bottom:15px;}
+
+    .settings_content_container .button_container .substract{ margin-left:130px;}
+    .checkbox_container{ text-align:center; padding:15px; margin-bottom:15px;}
+
+    .buttons_user_date_time_container {
+        padding: 10px 3% 0 3%;
+    }
+    #settings_page .buttons_user_date_time_container {
+        padding: 0 0 0 14.5%;
+    }
+    .green_arrow_button_area {
+        float: none;
+        position: relative;
+        left: 74%;
+        top: 500px;
+        width: 137px;
+    height: 136px;
+    }
+    .dialer_area {
+        position: relative;
+        min-height: 550px;
+    top: 80px;
+    }
+    .multicol-col {
+        -moz-column-count: 2;
+        -moz-column-width: 300px;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 2;
+        -webkit-column-width: 300px;
+        -webkit-column-gap: 20px;
+    }
+    .display_options {
+        width: 44%;
+        float: left;
+    }
+    .filter_options {
+        width: 54%;
+        float: left;
+    }
+    .short_description_text {             
+        float: left;
+        width: 85%;
+    }
+    .helpdesk_display_options div[data-role="fieldcontain"] {
+        width: 162px;
+        float: left;
+        clear: none;
+        margin-right: 2%;
+        margin-bottom: 2%;
+    margin-top: 0.5%;
+    }
+    .ticket_details_col_1 {
+        width: 99%;
+        float: none;
+        padding-right: 1%;
+    }
+    .ticket_details_col_2,
+    .ticket_details_col_3 {
+        width: 50%;
+        float: left;
+    }
+    .ticket_timers_details, .ticket_details {
+        height: 87.9%;
+    }
+
+    .gmap_container {
+    height: 942px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #home_logout {
+        margin-bottom: 30px;
+    }
+
+.contact_container, .title_container{ /*width: 480px;*/ width: 30%; float:left; }
+    .contact_container .content{ float:left; /*width:85%;*/}
+    .contact_container .arrow.left{ float:left; width:15%; width: 40px;
+    text-align: center;
+    background: url(images/left-arrow.png) 50% 50% no-repeat;
+    height: 23px;
+    }
+    .contact_container .arrow.down{ float:left; width:15%; width: 40px;
+    text-align: center;
+    background: url(images/down-arrow.png) 50% 50% no-repeat;
+    height: 23px;
+    }
+    .contact_container {
+        font-family: "Open Sans";
+        font-size: 12px;
+        font-style: normal;
+        color: #000000;
+        padding: 10px 10px;
+        margin-left: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 400px;
+        margin-right: 10px;
+    }
+    .title_container{ font-family: "Open Sans"; font-size:26px; font-style: normal; color:#666666; padding:10px 0; margin-left:15px;}
+    .info_container{ width:320px; float:left; margin-top:15px; border: solid 1px #e0e0e0; -webkit-border-radius:5px; margin-left: 40px;}
+    #helpdesk_timers_page .info_container {
+        width: 29.3%;
+        float: left;
+        margin-top: 15px;
+        border: solid 1px #e0e0e0;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        margin-left: 3%;
+    }
+    .info_container.helpdesk_ticket {
+        width: 450px;
+    }
+    .info_container .col1 .padder {
+        min-height: 100px;
+    }
+    .info_container .col1{ width:33%; float:left; font-family: "Open Sans"; font-size:16px; font-style: normal; color:#ffffff; border-radius: 5px 0px 0px 5px; background-color:#646464; min-height:65px;}
+    #helpdesk_timers_page .info_container .col1 {
+        width: 43%;
+    }
+    .info_container .col2{ width: 67%; float:left; font-family: "Open Sans"; font-size:12px; font-style: normal; color:#000000; min-height:65px;}
+    #helpdesk_timers_page .info_container .col2 {
+        width: 57%;
+    }
+    .info_container .col1 .padder, .info_container .col2 .padder{ padding:10px;}
+    .clear_right_margin{ margin-right:0px;}
+    .header_float_clear{ clear:both;}
+    .info_container .col1 .date{ margin-bottom:10px;}
+
+
+    #main_wrapper { min-height: 100%;;/*margin-bottom: -50px;*/ }
+    #main_wrapper:after {content: ""; display: block;}
+    #footer, #main_wrapper:after {height: 50px; }
+    #footer { background-color:#fff;}
+    .arrow{ font-size:40px; line-height:15px;}
+
+    .btnsContainer{margin-top:80px;}
+    .btnsContainer button{margin:0 0 40px; height:76px; width:214px; padding:20px 5px 20px 90px; border:none; display:block; color:#ffffff; font-size:16px; text-align:left; cursor:pointer;}
+
+
+
+
+
+
+
+
+
+
+    .dialer_area{  width:700px; float:right;}
+
+
+    .main_dialer_conitainer{  margin-bottom: 0;  width: 100%; margin-top: 80px;}
+
+
+    .main_dialer_conitainer{ float:right; width: 700px; margin-top: 20px;}
+    .settings_container{ width:100%;}
+    .settings_container .header { background-color:#b8002d; padding:15px;}
+    .settings_container .header .column1, .settings_container .header .column3{ width:25%; float:left;} 
+    .settings_container .header .column2{ float:left; width:50%; text-align:center; font-family:"Open Sans"; font-size:25px; color:#fff;}
+    .settings_container .header .column1 a{ background:url(images/left-top-arrow.png) no-repeat 0 0; width:33px; height:32px; display:block;}
+    .settings_content_container{ margin: 0 auto 50px; padding-bottom: 20px; width:80%; border:solid 1px #b8002d; border-radius:5px;}
+    .settings_content_container .blocks .header{ background-color:#b8002d; padding:10px; font-family: "Open Sans"; color:#fff; font-size:20px; text-align: left;}
+
+
+    .settings_content_container .button_container button{ 
+        font-size:20px;
+        color:#fff; 
+        background-color:#b8002d; 
+        border:none; 
+        width: 25px;
+        height: 25px; 
+        text-align:center; 
+        float:left; 
+    }
+
+
+
+    .settings_content_container .button_container{ width:500px; margin:0 auto; text-align:center; padding-bottom:15px;}
+
+    .settings_content_container .button_container .substract{ margin-left:130px;}
+    .checkbox_container{ text-align:center;}
+
+    
+    .buttons_user_date_time_container {
+        padding: 0 3% 0;
+    }
+    #settings_page.buttons_user_date_time_container {
+        padding: 10px 0 10px 17%;
+    }
+
+
+
+    .green_arrow_button_area {
+        float: none;
+        position: relative;
+        left: 65%;
+        top: 380px;
+        width: 137px;
+    height: 136px;
+    }
+
+
+    .dialer_area {
+        position: relative;
+        min-height: 450px;
+        top: 70px;
+    }
+    .buttons_user_date_time_container .button {
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 118px;
+    line-height: 10px;
+    width: 150px;
+    }
+    #settings_page .buttons_user_date_time_container [class^="icon-"]::before, #settings_page .buttons_user_date_time_container [class*=" icon-"]::before {
+        color: #fff;
+        margin: 0;
+        position: relative;
+        top: 6px;
+        line-height: 0;
+    }
+    .multicol-col {
+        -moz-column-count: 3;
+        -moz-column-width: 300px;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 3;
+        -webkit-column-width: 300px;
+        -webkit-column-gap: 20px;
+    }
+    .display_options {
+        width: 34%;
+        float: left;
+    }
+    .filter_options {
+        width: 64%;
+        float: left;
+    }
+    .short_description_text {
+        float: left;
+        width: 81%;
+    }
+    .helpdesk_display_options div[data-role="fieldcontain"] {
+        width: 222px;
+        float: left;
+        clear: none;
+        margin-right: 2%;
+        margin-bottom: 2%;
+    margin-top: 0.5%;
+    }
+    .ticket_details_col_1 {
+        width: 49%;
+        float: left;
+        padding-right: 1%;
+    }
+    .ticket_details_col_2,
+    .ticket_details_col_3 {
+        width: 25%;
+        float: left;
+    }
+    .ticket_timers_details, .ticket_details {
+        height: 83.4%;
+    }
+
+    .gmap_container {
+    height: 686px;
+    }
+}
+.settings_content_container .content .label {
+    font-family: "Open Sans";
+    font-size: 15px; 
+    padding: 10px; 
+    color: #5a5758;
+}
+.offline-mode .settings_content_container .content .label {
+    color: #fff;
+}
+.settings_content_container .button_container .value {
+	width: 200px;
+	display: block;
+	float: left;
+	font-family: "Open Sans"; 
+	color: #666666;
+}
+.offline-mode .settings_content_container .button_container .value {
+	color: #fff;
+}
+.btnsContainer button {
+    border-radius: 5px;
+}
+
+.green_arrow_button_area { background:url(images/arrow-green.png) no-repeat 0 0;}
+.green_arrow_button_area:hover{ background:url(images/arrow-green-active.png) no-repeat 0 0;}
+
+button.timerBtn { background:#5d5697 url(images/timerIcon.png) no-repeat 4px center;}
+button.timerBtn.user_not_loggedin {background-color:#aeabcb;}
+button.timerBtn:active { background-color: #9c98c1}
+button.settingBtn {background:#b8002d url(images/settingIcon.png) no-repeat 4px center;}
+button.settingBtn.user_not_loggedin { background-color: #dc8096; }
+button.settingBtn:active {background-color: #d06f86}
+button.homeBtn{background:#ef9c00 url(images/homeIcon.png) no-repeat 4px center;}
+button.homeBtn:active{background:#ffb300 url(images/homeIcon.png) no-repeat 4px center;}
+
+#home_logout.user_not_loggedin {
+    background: #c3c3c3 url(images/homeIcon.png) no-repeat 4px center;
+}
+#home_logout {
+    background: #aaa url(images/homeIcon.png) no-repeat 4px center;
+}
+#home_logout:active {
+    background-color: #999;
+}
+
+
+
+
+
+
+
+
+#settings_page .header {
+    background: #b8002d;
+}
+
+/*Overiding jquery mobile default css*/
+#helpdesk_page div.ui-content {
+	padding: 0;
+}
+/*Ticket Details*/
+.info_container {
+    cursor: pointer;
+}
+.info_container.user_selected {
+    border: 1px solid rgb(0, 160, 225);
+}
+.info_container.user_selected .col1 {
+    background: rgb(0, 160, 225);
+}
+.ticket_timers_details, .ticket_details {
+    display: none;
+    position: fixed;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    top: 53px;
+    width: 98%;
+    z-index: 800;
+    padding: 0 0 1% 1%;
+    overflow: scroll;
+}
+.info_container.user_selected .ticket_timers_details, 
+.info_container.user_selected .ticket_details {
+    display: block;
+    padding: 1% 2%;
+}
+.two-col {
+    -moz-column-count: 2;
+    -moz-column-width: 300px;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-width: 300px;
+    -webkit-column-gap: 20px;
+}
+
+.btnsContainer {
+
+    padding: 0 6px;
+}
+/*
+.ui-field-contain.ui-body.ui-br {
+    margin: 0;
+}
+*/
+
+
+.short_description .hd_number {
+	float: right;
+}
+#helpdesk_page .title_container {
+    text-align: center;
+    margin: 0;
+    float: none;
+    width: auto;
+    height: 36px;
+}
+
+.filter_options {
+    margin-left: 2%;
+}
+label[for="all_tickets"],
+label[for="my_tickets"],
+label[for="closed_tickets"] {
+    background: transparent;
+    border: none;
+    font-weight: normal;
+}
+.helpdesk_display_options .ui-btn-inner {
+	border: none;
+}
+.display_options_title {
+    text-align: left;
+    color: #666;
+    padding-left: 0px;
+    text-shadow: none;
+    font-size: 18px;
+}
+.display_options_title.display {
+    padding-left: 20px;
+}
+
+.helpdesk_display_options div[data-role="fieldcontain"],
+.helpdesk_display_options .filter_container {
+    width: 32%;
+    float: left;
+    text-align: left;
+    margin-right: 1%;
+}
+
+.helpdesk_display_options div[data-role="fieldcontain"]:last-child,
+.helpdesk_display_options .filter_container:last-child {
+    margin-right: 0;
+}
+.filter_container .ui-input-text {
+    display: none;
+}
+#helpdesk_categories_dummy,
+#helpdesk_states_dummy,
+#helpdesk_editors_dummy,
+#status_after_forwarding_dummy {
+    -webkit-appearance: none;
+    font-family: 'Open Sans';
+    color: #666;
+    font-size: 18px;
+    line-height: 20px;
+    padding:5px; 
+    border-radius:5px; 
+    background:#fff;  
+    border:solid 1px #afafaf;
+    display: inline-block;
+    width: 90%;
+}
+.helpdesk_display_options {
+    background: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 55px;
+    left: 0;
+    -moz-transition: opacity 1s ease-out;
+    -webkit-transition: opacity 1s ease-out;
+    -o-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
+    z-index: -100;
+    height: 0;
+    display: none;
+}
+.helpdesk_filter {
+    opacity: 1;
+    z-index: 10000;
+    height: 126px;
+}
+#selected_category,
+#selected_state,
+#selected_editor {
+    display: none;
+}
+.display_options label {
+	color: #000;
+}
+#all_tickets, #my_tickets, #closed_tickets {
+    z-index: -100;
+
+}
+.display_options .ui-btn-text {
+	font-weight: normal;
+	text-shadow: none;
+}/*
+.ContactPersonImage {
+    display: none;
+}*/
+.helpdeskI3D,
+.helpdeskContactName {
+	display: none;
+}
+#user_lang,
+.ui-select .ui-btn .ui-btn-text,
+.ui-select .ui-btn .ui-btn-text span {
+    font-family: "Open Sans";
+}
+div[data-role="page"] div[data-role="footer"] {
+    border: none;
+}
+#settings_page div[data-role="footer"] {
+    background: rgb(184,0,45);
+    height: 48px;
+}
+/*
+#helpdesk_categories {
+    display: none;
+}
+#helpdesk_categories,
+#helpdesk_categories .ui-menu {
+    width: 200px;
+    font-family: "Open Sans",Tahoma,Verdana,Arial,sans-serif;
+    font-size: 1em;
+    border-radius: 0;
+    background: #fff none;
+}
+#helpdesk_categories a {
+    text-align: left;
+    text-shadow: none;
+    color: #666;
+    font-size: 18px;
+}
+#helpdesk_categories a span:not(.ui-menu-icon) {
+    display: none;
+}
+#helpdesk_categories .ui-menu-icon {
+    background-color: transparent;
+}
+#category_opener {
+    font-size: 18px;
+    color: #666;
+    font-weight: normal;
+    text-shadow: none;
+    text-align: left;
+}
+*/
+#states_data, #editor_data {
+    background: #fff none;
+}
+.display_options .ui-btn-text {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666;
+    font-family: 'Open Sans';
+}
+
+.display_options label {
+	margin: 0;
+}
+.display_options .ui-btn-inner {
+    padding: .3em 20px;
+}
+.headline_text {
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 36px;
+}
+.subhead_text {
+    font-size: 18px;
+}
+.bold_text {
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+h2.bold_text {
+    margin-top: 1em;
+}
+.normal_text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+}
+.hd_description {
+    max-height: 4.5em;
+    overflow: scroll;
+    margin: 1em 0;
+}
+div[data-role="footer"].ui-footer {
+    font-size: 14px;
+}
+#helpdesk_timers_page .ui-content {
+	padding: 0;
+}
+#helpdesk_timers_page .info_container {
+    position: relative;
+    background: #F9F9F9;
+}
+.tick_to_send_report {
+    background: #00A0E1;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.tick_to_send_report[class^="icon-"]::before, 
+.tick_to_send_report[class*=" icon-"]::before {
+    margin-left: 4px;
+    color: #fff;
+    font-weight: normal;
+    text-shadow: none;
+}
+
+    .ticket_details_col_1 {
+        width: 49%;
+        float: left;
+        padding-right: 1%;
+    }
+    .ticket_details_col_2  {
+        width: 30%;
+        float: left;
+    }
+    .ticket_details_col_3 {
+        width: 20%;
+        float: left;
+    }
+.ticket_details_field {
+    clear: both;
+}
+.ticket_details_field.field_route {
+    text-align: center;
+    padding: 20px 0 0;
+}
+.route_label {
+    color: #f9591b;
+}
+.field_contact_person {
+    margin-bottom: 2rem;
+}
+.field_customer {
+    margin-top: 3rem;
+}
+
+
+.field_label {
+	font-weight: bold;
+	width: 40%;
+	float: left;
+    margin: 0.3em 0;
+}
+.field_value {
+	width: 60%;
+	float: left;
+    margin: 0.3em 0;
+}
+.ticket_details_col_1 .field_value label {
+    word-wrap: break-word;
+}
+.field_contacts .field_label {
+	width: 27%;
+}
+.field_contacts .field_value {
+    width: 73%;
+}
+.ContactPersonImage .AdressContactI3D {
+    display: none;
+}
+.ContactPersonImage {
+    width: 100%;
+    border: 1px solid 
+    transparent;
+    border-radius: 5px;
+}
+.customer_photo img {
+	max-width: 98%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+.route {
+    position: relative;
+}
+.route::before {
+    font-size: 60px;
+    position: absolute;
+    left: 170px;
+    top: 100px;
+}
+.gmap_outer_container  {
+    display: none;
+    width: 98%;
+    position: fixed !important;
+    z-index: -900;
+    top: 6px;
+    background: #E5E3DF;
+    left: 1%;
+    border: 1px solid #0266C8;
+    border-radius: 5px;
+}
+.gmap_close {
+    height: 48px;
+    background: #0266C8;
+    text-align: right;
+}
+.gmap_outer_container [class^="icon-"]::before,
+.gmap_outer_container [class*=" icon-"]::before {
+    width: 36px;
+    line-height: 36px;
+    color: #fff;
+    margin-left: 0px;
+    margin-top: 6px;
+}
+.gmap_container {
+    width: 98%;
+}
+
+#home_page .buttons_user_date_time_container [class^="icon-"]::before, 
+#home_page .buttons_user_date_time_container [class*=" icon-"]::before {
+    width: 24px;
+    line-height: 24px;
+    margin-left: 0;
+    color: #aaa;
+    font-size: 24px;
+    margin-right: 0;
+    position: relative;
+    top: 34px;
+    border: 1px solid #aaa;
+    border-radius: 24px;
+    padding: 5px;
+}
+
+
+.action_button_container .button {
+    display: inline-block;
+    margin: 10px 40px;
+    width: 100px;
+    text-align: center;
+}
+.action_button_container [class^="icon-"]::before,
+.action_button_container [class*=" icon-"]::before {
+    width: 28px;
+    line-height: 28px;
+    margin-left: .2em;
+    color: 
+    #aaa;
+    font-size: 24px;
+    margin-left: -103px;
+    text-shadow: none;
+    border: 1px solid #aaa;
+    border-radius: 24px;
+    padding: 2px;
+}
+.action_button_container .no-customer[class^="icon-"]::before,
+.action_button_container .no-customer[class*=" icon-"]::before,
+.action_button_container .disabled[class^="icon-"]::before,
+.action_button_container .disabled[class*=" icon-"]::before {
+    color: #ddd;
+    border-color: #ddd;
+}
+.action_button_container .no-customer a,
+.action_button_container .no-customer a:hover,
+.action_button_container .no-customer a:visited,
+.action_button_container .disabled a,
+.action_button_container .disabled a:hover,
+.action_button_container .disabled a:visited {
+    color: #ddd;
+    border-color: #ddd;
+}
+.ticket_details_field.field_route .route {
+    background: url(images/route.png) no-repeat center center;
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 0 auto 0;
+}
+.ticket_details_field.field_route .route:active {
+    background: url(images/route2.png) no-repeat center center;
+}
+/*
+#settings_page .settings_content_container [class^="icon-"]::before, 
+#settings_page .settings_content_container [class*=" icon-"]::before 
+*/
+#photo_load_delay_minus::before,
+#photo_load_delay_plus::before {
+    margin-top: -2px;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 1px;
+}
+
+.ui-slider-inneroffset {
+    top: -1px;
+}
+div.ui-slider-switch {
+    padding-right: 2px;
+}
+
+.helpdeskContactTitle {
+    display: none;
+}
+
+.display_options .ui-icon {
+	width: 18px;
+	height: 18px;
+}
+
+.display_options .ui-icon, .display_options .ui-icon-searchfield::after {
+	/*background-image: url(images/icons-18-white.png) *//*{global-icon-set}*/
+    background-image: none;
+}
+
+.display_options .ui-icon.ui-icon-checkbox-off {
+    background-color: #D4D4D4;
+}
+.ui-loader .ui-icon.ui-icon-loading {
+	background: url(images/ajax-loader.gif);
+	background-size: 46px 46px;
+}
+.short_description {
+    line-height: 26px;
+}
+#HDTimer_popup .ui-slider-label.ui-btn-active {
+    background: #00A0E1;
+}
+#HDTimer_popup .ui-slider-label {
+    background: #c8c8c8;
+}
+.timer_details_col_1, .timer_details_col_2 {
+	float: left;
+	width: 50%;
+}
+.timer_details_field {
+    clear: both;
+}
+.ticket_timers_details .headline_text {
+	text-align: center;
+}
+
+.timer_details_field .field_label {
+    width: 40%;
+}
+.timer_details_field .field_value {
+    width: 60%;
+}
+.filter_label {
+    color: #666;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: normal;
+    text-shadow: none;
+}
+.helpdesk_display_options div[data-role="fieldcontain"] {
+    text-align: left;
+}
+#language_select-button {
+    background-color: transparent;
+    box-shadow: none;
+}
+.ui-mobile .ui-page-active {
+    height: 100%;
+    background: #F9F9F9;
+}
+.close_ticket_details {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 2%;
+    top: 1.2%;
+}
+.ticket_timers_details .close_ticket_details {
+    top: 8%;
+    right: 3%;
+}
+.close_ticket_details[class*=" icon-"]::before {
+    width: 24px;
+    line-height: 24px;
+    color: #000;
+    font-size: 24px;
+    margin-left: 0px;
+}
+
+#settings_page {
+    height: 90% !important;
+}
+
+.ui-body-c, .ui-body-c input, .ui-body-c select, .ui-body-c textarea, .ui-body-c button {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.ui-popup-screen.ui-overlay-b {
+	z-index: 9000;
+}
+.ui-popup-container.ui-popup-active {
+	z-index: 10000;
+}
+/*
+.delete_container span {
+    display: block;
+    background: url(images/delete_btn.png) no-repeat 0 0;
+    width: 135px;
+    height: 29px;
+    margin: 15px auto;
+    text-align: center;
+    color: #fff;
+    line-height: 29px;
+}
+.delete_container span.no-customer,
+.delete_container span.disabled {
+    background:url(images/delete_btn_disabled.png) no-repeat 0 0;
+}
+*/
+div[data-role="page"]:not(#hotline_details_page) div.ui-footer.ui-bar-a.ui-footer-fixed.slideup {
+    display: block !important;
+}
+#helpdesk_timer_container {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+}
+.timer_internal_note {
+    font-size: 16px;
+}
+.delete_container {
+    text-align: center;
+    margin-bottom: 3em;
+}
+.delete_container .ui-btn {
+    background: #b8002d;
+}
+.ui-icon-centron-trash {
+    background: none;
+    background-color: transparent;
+    background-image: none;
+    text-indent: 0;
+}
+.ui-icon.ui-icon-centron-trash.ui-icon-shadow {
+    border: none;
+}
+.ui-icon-centron-trash::before {
+    position: absolute;
+    content: '\e729';
+    font-family: "centronicons";
+    font-weight: normal;
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+    left: 3px;
+    text-shadow: none;
+    color: #fff;
+}
+.delete_container .ui-btn .ui-btn-text {
+    text-shadow: none;
+    color: #fff;
+}
+.short_description_text.subhead_text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.description.normal_text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.headline_text, 
+.hd_short_desc {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+#helpdesk_categories_dummy::-webkit-input-placeholder {
+    color:    #666;
+}
+
+/*Design of every mobil scroll control: Background: transparent*/
+.dwo{
+    background:transparent !Important;
+}
+.mbsc-mobiscroll .dwwr{
+    border:1px solid #afafaf !Important;
+}
+.mbsc-mobiscroll .dw-bubble-bottom .dw-arr{
+    border-color:transparent transparent #afafaf transparent !Important;
+}
+.mbsc-mobiscroll .dw-bubble-top .dw-arr{
+    border-color:#afafaf transparent transparent transparent !Important;
+}
+/*Design of every mobil scroll control: Background: transparent*/
+
+/*landscape*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .gmap_outer_container  {
+        height: 736px;
+    }
+    #helpdesk_page {
+        height: 630px !important;
+    }
+    #helpdesk_timer_container {
+        height: 560px;
+    }
+    .ticket_timers_details {
+        top: 120px;
+    }
+}
+/* iPads (portrait) ----------- */
+@media only screen and (max-width : 768px) {
+    .gmap_outer_container  {
+        height: 990px;
+    }
+    #helpdesk_page {
+        height: 889px !important;
+    }
+    #helpdesk_timer_container {
+        height: 830px;
+    }
+    .ticket_timers_details {
+        top: 130px;
+    }
+    .field_contacts.contact_email .field_value {
+        clear: both;
+        width: 100%;
+        margin-top: 0;
+    }
+}
+.crm_status_container .ui-slider-switch{ width:170px !Important;}

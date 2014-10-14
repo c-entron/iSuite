@@ -1,0 +1,159 @@
+/*W3C CSS Validated on 21 May 2014*/
+
+/* Resetting the default browser values */
+*{ margin:0px; padding:0px;}
+.fl{ float:left;} .fr{ float:right;} .cb{ clear:both;}
+
+
+/* header */
+.header_container .col1, .header_container .col3{ width:10%;}
+.header_container .col2 { width:80%}
+#wrapper{width:100%;}
+#header{padding:10px; color:#ffffff; font-size:18px; text-align:center; background:#ef9c00; font-family: "Open Sans";}
+.padder{padding:15px 20px;}
+.title{border-radius:5px; border:1px solid #e5e5e5; padding:10px; font-size:16px; color:#646464; font-family: "Open Sans";}
+.title span{font-size:12px; margin:0 20px;}
+
+
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+html, body {  height: 100%;}
+.contact_container, .title_container{ width:94%; float:left; }
+.title_container { margin-left:15px;}
+.contact_container .content{ float:left; width:85%;}
+.contact_container .arrow{ float:left; width:15%; text-align:center;}
+.contact_container{font-family: "Open Sans"; font-size:12px; font-style: normal; color:#000000; padding:10px 0; margin-left:15px;}
+.title_container{ font-family: "Open Sans"; font-size:23px; font-style: normal; color:#666666; padding:10px 0;}
+.info_container{ width:94%; float:left; margin-top:15px; border: solid 1px #e0e0e0; -webkit-border-radius:5px; margin-left:15px; }
+.info_container .col1{ width:30%; float:left; font-family: "Open Sans"; font-size:12px; font-style: normal; color:#ffffff; border-radius: 5px 0px 0px 5px; background-color:#646464; min-height:120px; word-break: break-all;}
+.info_container .col2{ width:70%; float:left; font-family: "Open Sans"; font-size:12px; font-style: normal; color:#000000; min-height:120px;}
+.info_container .col1 .padder, .info_container .col2 .padder{ padding:10px;}
+.header_float_clear{ clear:both;}
+.info_container .col1 .date{ margin-bottom:10px;}
+
+#main_wrapper { min-height: 100%;margin-bottom: -50px; }
+#main_wrapper:after {content: ""; display: block;}
+#footer, #main_wrapper:after {height: 50px; }
+#footer { background-color:#fff;}
+
+.button_container .button{ float:left; margin-left:15px; margin-right:20px;}
+.button_container .button a{ display:block; padding:10px 10px 10px 45px; font-family:"Open Sans"; font-size:16px; color:#333333; text-decoration:none;}
+.button_container .add_btn{ background: url(../images/add_btn.png) no-repeat 5px 5px;}
+.button_container .edit_btn{ background: url(../images/edit_btn.png) no-repeat 5px 5px;}
+.button_container .report_btn{ background: url(../images/report_btn.png) no-repeat 5px 5px;}
+.button_container .user_btn{ background: url(../images/user) no-repeat 5px 10px;}
+.button_container .date_btn{ background: url(../images/calendar.png) no-repeat 5px 10px;}
+.button_container .time_btn{ background: url(../images/time.png) no-repeat 5px 10px;}
+.arrow{ font-size:40px; line-height:15px;}
+}
+
+/* iPads (landscape) ----------- */
+
+/* iPads (portrait) ----------- */
+@media only screen and (max-width: 768px) {
+    html, body {  height: 100%;}
+    .contact_container, .title_container{ width:358px !important; float:left; }
+    .contact_container .content{ float:left; width:85%;}
+    .contact_container .arrow{ float:left; width:15%; text-align:center;}
+    .contact_container{font-family: "Open Sans"; font-size:12px; font-style: normal; color:#000000; padding:10px 0; margin-left:15px;}
+    .title_container{ font-family: "Open Sans"; font-size:23px; font-style: normal; color:#666666; padding:10px 0;}
+    .info_container{ width:358px !important; float:left; margin-top:15px; border: solid 1px #e0e0e0; -webkit-border-radius:5px; margin-left:15px; }
+    .info_container .col1{ width:30%; float:left; font-family: "Open Sans"; font-size:12px; font-style: normal; color:#ffffff; border-radius: 5px 0px 0px 5px; background-color:#646464; min-height:120px; word-break: break-all;}
+    .info_container .col2{ width:70%; float:left; font-family: "Open Sans"; font-size:12px; font-style: normal; color:#000000; min-height:120px;}
+    .info_container .col1 .padder, .info_container .col2 .padder{ padding:10px;}
+    .header_float_clear{ clear:both;}
+    .info_container .col1 .date{ margin-bottom:10px;}
+    #main_wrapper { min-height: 100%;margin-bottom: -50px; }
+    #main_wrapper:after {content: ""; display: block;}
+    #footer, #main_wrapper:after {height: 50px; }
+    #footer { background-color:#fff;}
+    .arrow{ font-size:40px; line-height:15px;}
+
+    .btnsContainer{margin-top:80px;}
+    .btnsContainer button{margin:0 40px 0 0; height:76px; width:214px; padding:20px 5px 20px 90px; border-radius:15px; border:none; display:block; color:#ffffff; font-size:16px; text-align:left; cursor:pointer; float:left;}
+    button.homeBtn{background:#ef9c00 url(../images/homeIcon.png) no-repeat 10px center;}
+    button.settingBtn{background:#b8002d url(../images/settingIcon.png) no-repeat 10px center;}
+    button.timerBtn{background:#5d5697 url(../images/timerIcon.png) no-repeat 10px center; margin-right:0px;}
+    .green_arrow_button_area{ float:right;}
+    .green_arrow_button_area a{ display:block; width:137px; height:136px; background:url(../images/arrow-green.png) no-repeat 0 0;}
+    .green_arrow_button_area a:hover{ background:url(../images/arrow-green-active.png) no-repeat 0 0;}
+    .dialer_area{  width:550px; float:left;}
+    .clear{ clear:both;}
+    .main_dialer_conitainer{  margin-bottom:50px;  width:730px;}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .contact_container, .title_container{ width:320px; float:left; }
+    .contact_container .content{ float:left; width:85%;}
+    .contact_container .arrow{ float:left; width:15%; text-align:center;}
+    .contact_container{font-family: "Open Sans"; font-size:12px; font-style: normal; color:#000000; padding:10px 0; margin-left:15px;  }
+    .title_container{ font-family: "Open Sans"; font-size:23px; font-style: normal; color:#666666; padding:10px 0; margin-left:15px;}
+    .info_container{ width:320px; float:left; margin-top:15px; border: solid 1px #e0e0e0; -webkit-border-radius:5px; margin-left:15px;}
+    .info_container .col1{ width:30%; float:left; font-family: "Open Sans"; font-size:12px; font-style: normal; color:#ffffff; border-radius: 5px 0px 0px 5px; background-color:#646464; min-height:65px;}
+    .info_container .col2{ width:70%; float:left; font-family: "Open Sans"; font-size:12px; font-style: normal; color:#000000; min-height:65px;}
+    .info_container .col1 .padder, .info_container .col2 .padder{ padding:10px;}
+    .clear_right_margin{ margin-right:0px;}
+    .header_float_clear{ clear:both;}
+    .info_container .col1 .date{ margin-bottom:10px;}
+
+
+    #main_wrapper { min-height: 100%;margin-bottom: -50px; }
+    #main_wrapper:after {content: ""; display: block;}
+    #footer, #main_wrapper:after {height: 50px; }
+    #footer { background-color:#fff;}
+    .arrow{ font-size:40px; line-height:15px;}
+
+    .btnsContainer{margin-top:80px;}
+    .btnsContainer button{margin:0 0 60px; height:76px; width:214px; padding:20px 5px 20px 90px; border-radius:15px; border:none; display:block; color:#ffffff; font-size:16px; text-align:left; cursor:pointer;}
+    button.homeBtn{background:#ef9c00 url(../images/homeIcon.png) no-repeat 10px center;}
+    button.settingBtn{background:#b8002d url(../images/settingIcon.png) no-repeat 10px center;}
+    button.timerBtn{background:#5d5697 url(../images/timerIcon.png) no-repeat 10px center;}
+    .green_arrow_button_area { float:right;}
+    .green_arrow_button_area a{ display:block; width:137px; height:136px; background:url(../images/arrow-green.png) no-repeat 0 0;}
+    .green_arrow_button_area a:hover{ background:url(../images/arrow-green-active.png) no-repeat 0 0;}
+    .dialer_area{  width:700px; float:right;}
+    .main_dialer_conitainer{ float:right; width:800px;}
+}
+
+/*Overiding jquery mobile default css*/
+#helpdesk_page div.ui-content {
+	padding: 0;
+}
+/*Ticket Details*/
+.info_container {
+    cursor: pointer;
+}
+.info_container.user_selected {
+    border: 1px solid rgb(0, 160, 225);
+}
+.info_container.user_selected .col1 {
+    background: rgb(0, 160, 225);
+}
+.ticket_timers_details {
+    display: none;
+    position: absolute;
+    left: 0;
+    background: rgba(241,241,241,0.8);
+    top: 25%;
+    height: 75%;
+    z-index: 50000;
+}
+.info_container.user_selected > .ticket_timers_details {
+    display: block;
+    padding: 1rem;
+}
+.two-col {
+    -moz-column-count: 2;
+    -moz-column-width: 300px;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-width: 300px;
+    -webkit-column-gap: 20px;
+}
+
+#helpdesk_timers_page {
+    height: 80% !important;
+}

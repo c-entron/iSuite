@@ -1,0 +1,11 @@
+#popupDeleteOfflineData .ui-header {
+	background: #b8002d;
+}
+#popupDeleteOfflineData .ui-title {
+    margin: 0.6em 0 0.8em;
+}
+/*offline mode graphics*/
+body.offline-mode,
+div[data-role="page"].offline-mode {
+    background: #7F7F7F !important;
+}

@@ -1,0 +1,315 @@
+/*W3C CSS Validated on 21 May 2014*/
+
+*{
+	margin:0; 
+	padding:0;
+}
+
+.cb{
+	clear:both;
+}
+
+html, body{
+	height:100%;
+}
+
+.header{
+	background:#1abc9c;
+	padding:5px 20px;
+	text-align:center;
+	color:#ffffff;
+    text-transform: none;
+}
+
+.backBtn{
+	display:block; 
+	float:left; 
+	width:28px; 
+	height:28px; 
+	background:url(../img/LoginScreen/Webservices/back.png) no-repeat 0 0;
+}
+
+#webservice_page .pageTitle {
+    font-weight: normal;
+    font-size: 20px;
+    font-family: "Open Sans";
+    text-shadow: none;
+    color: #fff;
+}
+
+#webservice_page #serviceBox {
+    min-height:100%;
+    height: auto !important; 
+    height: 100%;
+    width:100%; 
+    margin:0 auto -34px;
+}
+
+#webservice_page .contentBox{
+    margin:0 auto; 
+    padding:50px 0 0;
+    text-transform: none;
+}
+
+#webservice_page .listRow{
+	border:1px solid #1abc9c; 
+	padding:5px; 
+	width: 90%;
+	font:normal 18px 'Open Sans'; 
+	color:#1abc9c; 
+	border-radius:5px; 
+	margin:0 auto 20px; 
+	background:#ffffff;
+}
+
+#webservice_page .push{
+	clear:both;
+}
+#webservice_page .footer{
+	background:#ecf0f1; 
+	padding: 10px 0;
+	color:#1abc9c; 
+	font:bold 18px 'Open Sans'; 
+	text-align:right; 
+
+    bottom: 0;
+    width:100%;
+}
+
+#webservice_page .footer p{
+	margin:10px 0 !important;
+	float:right;
+    color:#1abc9c;
+    display:block;
+    clear: both;
+    text-align: right;
+    position: relative !important;
+    padding-right:48px;
+     text-transform: none;
+}
+
+#webservice_page .footer .wscopyrite{ width: auto !important; margin-top: 5px !important;
+margin-right: 10px !important;}
+
+#webservice_page .serviceMenu ul{ margin-top: 0px !important;}
+
+
+#webservice_page .serviceMenu li{
+	float:left; 
+	list-style:none;
+}
+
+/*
+#webservice_page .serviceMenu a{
+	display:block; 
+	font:normal 18px 'Open Sans'; 
+	color:#1abc9c !important; 
+	padding:5px 10px 5px 40px; 
+	background-image:url(../img/LoginScreen/Webservices/iconsprite.png); 
+	background-repeat:no-repeat; 
+	text-decoration:none; 
+	border:1px solid #e7e6e6;
+}
+*/
+#webservice_page .serviceMenu a,
+#webservice_page .serviceMenu span {
+	display:block; 
+	font:normal 18px 'Open Sans';
+	color:#1abc9c ; 
+	padding:5px 10px 5px 40px; 
+	background-image:url(../img/LoginScreen/Webservices/iconsprite.png); 
+	background-repeat:no-repeat; 
+	text-decoration:none; 
+}
+#webservice_page .serviceMenu a.web-service-demo {
+    background-image: none; 
+}
+
+.serviceMenu a:hover{
+	color:#ffffff !important;
+	background-color:#1abc9c;
+    text-shadow: none;
+}
+.addService{
+	background-position:6px 3px;
+}
+
+.addService:hover{
+	background-position:6px -45px;
+}
+
+.editService{
+	background-position:6px -93px;
+}
+
+.editService:hover{
+	background-position:6px -142px;
+}
+
+.deleteService{
+	background-position:6px -189px;
+}
+
+.deleteService:hover{
+	background-position:6px -237px;
+}
+
+.connectService{
+	background-position:6px -285px;
+}
+
+.connectService:hover{
+	background-position:6px -333px;
+}
+/*
+.optionBox_1, .optionBox{
+	border-radius:5px; 
+	background:#2d3e50; 
+	position:absolute;
+	margin-top:-340px; 
+    margin-left: 5px;
+	width: 700px;
+	z-index:11;
+}
+*/
+.optionBox {
+    border-radius: 5px;
+    background: #2d3e50;
+    position: fixed;
+    margin-left: 5px;
+    width: 700px;
+    z-index:11;
+}
+.pop_upTitle_1, .pop_upTitle{
+	border-radius:5px; 
+	background:#1abc9c; 
+	color:#ffffff; 
+	text-align:center; 
+	font:normal 19px 'Open Sans'; 
+	padding:5px;
+}
+
+.pop_upContent_1, .pop_upContent{
+	padding:20px;
+}
+
+.inputField_1, .inputField{
+	margin-bottom:10px; 
+	text-align: left;
+}
+
+.inputField_1 input, .inputField input{
+	background:#2d3e50; 
+	border:1px solid #1abc9c; 
+	padding:5px; 
+	border-radius:2px; 
+	width:350px;
+	color:black;/*#f2f2f2*/
+    font-size:16px;
+}
+
+.okBtn{
+	display:block;
+	padding:24px 15px 0; 
+	background:url(../img/LoginScreen/Webservices/ok.png) no-repeat center 0;
+	margin:5px 5px 0 0px; 
+	float:left; 
+	color:#ffffff; 
+	font:normal 18px 'Open Sans';
+}
+
+.cancelBtn{
+	display:block; 
+	padding:24px 15px 0; 
+	background:url(../img/LoginScreen/Webservices/cancel.png) no-repeat center 0;
+	margin:5px 0 0 5px; 
+	float: right; 
+	color:#ffffff; 
+	font:normal 18px 'Open Sans';
+}
+
+.bottomArrow{
+	display:block; 
+	width:16px !important; 
+	height:16px; 
+	position:relative; 
+	margin:0 0 0 20px; 
+	background:url(../img/LoginScreen/Webservices/bottomArrow.png) no-repeat 0 0; 
+	bottom:-33px;
+}
+
+.button_container{ width: 300px; margin: 20px auto 0 auto;}
+.closeBtn {
+    display: block;
+    float: right;
+    width: 32px;
+    height: 32px;
+    background: url(images/option-icon.png) no-repeat 0 0;
+    margin-right: 20px;
+}
+#webservice_page .closeBtn {
+	display:block; 
+	float:right; 
+	width:28px; 
+	height:28px; 
+	background:url(../img/LoginScreen/close.png) no-repeat 0 0;
+	margin-right: 20px;
+}
+.web-service-demo[class^="icon-"]::before, .web-service-demo[class*=" icon-"]::before {
+	width: 26px;
+	line-height: 26px;
+	color: #000;
+	font-size: 24px;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	top: 4px;
+	border: 1px solid #1abc9c;
+	border-radius: 26px;
+	height: 26px;
+}
+#serviceBox ul {
+    list-style: none;
+}
+.service-name {
+    display: inline-block;
+    width: 30%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.service-address {
+    display: inline-block;
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+label[for="nameWebservices"], label[for="addressWebservices"] {
+    color: #fff;
+    font-size: 18px;
+}
+
+#webservice_page div[data-role="header"] {
+    background-color: #1ABC9C;
+    background: #1ABC9C;
+}
+#popupDeleteWSDialog .ui-header .ui-title {
+    margin: .6em 2% .8em;
+    text-shadow: none;
+}
+.contentBoxBackground{
+    background-color: #1ABC9C !important;
+    color: white !important;
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .optionBox {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .optionBox {
+        top: 30%;
+    }
+}
