@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>12783C15-9E64-4716-B99A-36D0779D27D3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>QuickSuite</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>694C67EB-E80C-4158-B2B7-82E8801D8237</key>
+		<string>https://github.com/sembu/QuickSuite.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>QuickSuite.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>694C67EB-E80C-4158-B2B7-82E8801D8237</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sembu/QuickSuite.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>694C67EB-E80C-4158-B2B7-82E8801D8237</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>694C67EB-E80C-4158-B2B7-82E8801D8237</string>
+			<key>IDESourceControlWCCName</key>
+			<string>QuickSuite</string>
+		</dict>
+	</array>
+</dict>
+</plist>
